@@ -1,0 +1,9 @@
+device=cpu
+pending_images=9627
+confidence_threshold=0.9
+NBI=333
+WL=1524
+uncertain=7770
+elapsed_seconds=596.87
+checkpoint=C:\Users\lcliu\Desktop\分割\预处理数据（预训练二分类法）\artifacts\resnet18\checkpoints\best_model.pt
+predictions_csv=C:\Users\lcliu\Desktop\分割\预处理数据（预训练二分类法）\artifacts\resnet18\inference\predictions.csv

@@ -1,0 +1,9 @@
+device=cpu
+pending_images=14127
+confidence_threshold=0.6
+NBI=2627
+WL=9936
+uncertain=1564
+elapsed_seconds=597.29
+checkpoint=F:\分割\预处理数据（预训练二分类法）\artifacts\resnet18\checkpoints\best_model.pt
+predictions_csv=F:\分割\预处理数据（预训练二分类法）\artifacts\resnet18\inference_t060_2\predictions.csv
