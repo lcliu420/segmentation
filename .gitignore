@@ -1,0 +1,17 @@
+# image files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.webp
+*.tif
+*.tiff
+*.svg
+
+# python cache
+__pycache__/
+*.pyc
+
+# outputs
+baseline/outputs/

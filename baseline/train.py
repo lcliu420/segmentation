@@ -9,6 +9,8 @@
 - 验证集 Dice / IoU / Precision / Recall 统计
 - 最优模型与最新模型保存
 - 训练日志导出
+- GPU 训练支持
+- 可选混合精度训练
 """
 
 from __future__ import annotations
@@ -20,6 +22,7 @@ from typing import Dict, List, Optional, Tuple, Union
 
 import torch
 from torch import Tensor, nn
+from torch.cuda.amp import GradScaler
 from torch.optim import Adam
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import DataLoader
@@ -100,8 +103,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--num-workers",
         type=int,
-        default=0,
-        help="DataLoader 的 worker 数量；Windows 下默认 0 更稳妥。",
+        default=4,
+        help="DataLoader 的 worker 数量；Windows 下默认建议设为 0。",
     )
     parser.add_argument(
         "--base-channels",
@@ -134,6 +137,11 @@ def build_parser() -> argparse.ArgumentParser:
         default="none",
         choices=["none", "cosine"],
         help="学习率调度器类型。",
+    )
+    parser.add_argument(
+        "--amp",
+        action="store_true",
+        help="在 CUDA 环境下启用自动混合精度训练。",
     )
     parser.add_argument(
         "--no-augmentation",
@@ -203,21 +211,13 @@ def build_dataloaders(args: argparse.Namespace) -> Tuple[DataLoader, DataLoader]
     common_kwargs = {
         "batch_size": args.batch_size,
         "num_workers": args.num_workers,
-        "pin_memory": torch.cuda.is_available(),
+        "pin_memory": args.device != "cpu" or torch.cuda.is_available(),
     }
     if args.num_workers > 0:
         common_kwargs["persistent_workers"] = True
 
-    train_loader = DataLoader(
-        train_dataset,
-        shuffle=True,
-        **common_kwargs,
-    )
-    val_loader = DataLoader(
-        val_dataset,
-        shuffle=False,
-        **common_kwargs,
-    )
+    train_loader = DataLoader(train_dataset, shuffle=True, **common_kwargs)
+    val_loader = DataLoader(val_dataset, shuffle=False, **common_kwargs)
     return train_loader, val_loader
 
 
@@ -277,10 +277,12 @@ def run_train_epoch(
     dataloader: DataLoader,
     criterion: nn.Module,
     optimizer: Adam,
+    scaler: Optional[GradScaler],
     device: torch.device,
     threshold: float,
     epoch_index: int,
     total_epochs: int,
+    use_amp: bool = False,
     dry_run: bool = False,
 ) -> Dict[str, float]:
     """执行一个训练 epoch。"""
@@ -301,10 +303,19 @@ def run_train_epoch(
         batch_size = images.size(0)
 
         optimizer.zero_grad(set_to_none=True)
-        logits = model(images)
-        loss = criterion(logits, masks)
-        loss.backward()
-        optimizer.step()
+
+        with torch.amp.autocast(device_type=device.type, enabled=use_amp):
+            logits = model(images)
+            loss = criterion(logits, masks)
+
+        if use_amp:
+            assert scaler is not None
+            scaler.scale(loss).backward()
+            scaler.step(optimizer)
+            scaler.update()
+        else:
+            loss.backward()
+            optimizer.step()
 
         batch_metrics = compute_segmentation_metrics(logits.detach(), masks, threshold)
 
@@ -332,6 +343,7 @@ def run_validation_epoch(
     threshold: float,
     epoch_index: int,
     total_epochs: int,
+    use_amp: bool = False,
     dry_run: bool = False,
 ) -> Dict[str, float]:
     """执行一个验证 epoch。"""
@@ -351,8 +363,10 @@ def run_validation_epoch(
         images, masks = move_batch_to_device(batch, device)
         batch_size = images.size(0)
 
-        logits = model(images)
-        loss = criterion(logits, masks)
+        with torch.amp.autocast(device_type=device.type, enabled=use_amp):
+            logits = model(images)
+            loss = criterion(logits, masks)
+
         batch_metrics = compute_segmentation_metrics(logits, masks, threshold)
 
         total_loss += float(loss.item()) * batch_size
@@ -375,6 +389,7 @@ def save_checkpoint(
     model: nn.Module,
     optimizer: Adam,
     scheduler: Optional[CosineAnnealingLR],
+    scaler: Optional[GradScaler],
     epoch: int,
     best_val_dice: float,
     args: argparse.Namespace,
@@ -386,6 +401,7 @@ def save_checkpoint(
         "model_state_dict": model.state_dict(),
         "optimizer_state_dict": optimizer.state_dict(),
         "scheduler_state_dict": scheduler.state_dict() if scheduler is not None else None,
+        "scaler_state_dict": scaler.state_dict() if scaler is not None else None,
         "best_val_dice": best_val_dice,
         "args": vars(args),
     }
@@ -411,6 +427,8 @@ def main() -> None:
     set_seed(args.seed)
 
     device = resolve_device(args.device)
+    use_amp = bool(args.amp and device.type == "cuda")
+
     experiment_name = args.experiment_name or f"{args.modality.lower()}_unet"
     experiment_dir, checkpoint_dir, log_dir = create_experiment_dirs(
         args.output_dir, experiment_name
@@ -430,6 +448,7 @@ def main() -> None:
         weight_decay=args.weight_decay,
     )
     scheduler = maybe_build_scheduler(optimizer, args.scheduler, args.epochs)
+    scaler = GradScaler(enabled=use_amp)
 
     config = {
         "modality": args.modality,
@@ -447,6 +466,7 @@ def main() -> None:
         "seed": args.seed,
         "device": str(device),
         "scheduler": args.scheduler,
+        "amp_enabled": use_amp,
         "augmentation_enabled": not args.no_augmentation,
         "normalize_enabled": not args.no_normalize,
         "dry_run": args.dry_run,
@@ -457,6 +477,7 @@ def main() -> None:
 
     print(f"实验名称：{experiment_name}")
     print(f"训练设备：{device}")
+    print(f"混合精度：{use_amp}")
     print(f"训练集样本数：{len(train_loader.dataset)}")
     print(f"验证集样本数：{len(val_loader.dataset)}")
     print(f"日志目录：{log_dir}")
@@ -472,10 +493,12 @@ def main() -> None:
             dataloader=train_loader,
             criterion=criterion,
             optimizer=optimizer,
+            scaler=scaler,
             device=device,
             threshold=args.threshold,
             epoch_index=epoch,
             total_epochs=args.epochs,
+            use_amp=use_amp,
             dry_run=args.dry_run,
         )
         val_metrics = run_validation_epoch(
@@ -486,6 +509,7 @@ def main() -> None:
             threshold=args.threshold,
             epoch_index=epoch,
             total_epochs=args.epochs,
+            use_amp=use_amp,
             dry_run=args.dry_run,
         )
 
@@ -515,6 +539,7 @@ def main() -> None:
             model=model,
             optimizer=optimizer,
             scheduler=scheduler,
+            scaler=scaler if use_amp else None,
             epoch=epoch,
             best_val_dice=max(best_val_dice, val_metrics["dice"]),
             args=args,
@@ -527,6 +552,7 @@ def main() -> None:
                 model=model,
                 optimizer=optimizer,
                 scheduler=scheduler,
+                scaler=scaler if use_amp else None,
                 epoch=epoch,
                 best_val_dice=best_val_dice,
                 args=args,
@@ -563,6 +589,7 @@ def main() -> None:
             "epochs_completed": len(history),
             "total_minutes": total_minutes,
             "device": str(device),
+            "amp_enabled": use_amp,
         },
         experiment_dir / "summary.json",
     )
