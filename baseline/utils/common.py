@@ -3,8 +3,9 @@ from __future__ import annotations
 import csv
 import json
 import random
+from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, List, Optional, Sequence, Union
 
 import numpy as np
 import torch
@@ -56,3 +57,58 @@ def set_seed(seed: int) -> None:
 
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
+
+
+def build_experiment_name(
+    modality: str,
+    model_name: str,
+    epochs: int,
+    batch_size: int,
+    image_size: Sequence[int],
+    scheduler: str,
+    use_amp: bool = False,
+) -> str:
+    """
+    根据关键训练参数自动生成实验名称。
+
+    命名风格示例：
+    - `wl_unet_e100_bs8_512x512_cosine_amp_20260420_213000`
+    - `nbi_unet_e50_bs4_640x640_none_20260420_221500`
+    """
+
+    if len(image_size) != 2:
+        raise ValueError("image_size 必须包含两个整数。")
+
+    height, width = int(image_size[0]), int(image_size[1])
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    name_parts = [
+        modality.lower(),
+        model_name.lower(),
+        f"e{epochs}",
+        f"bs{batch_size}",
+        f"{height}x{width}",
+        scheduler.lower(),
+    ]
+    if use_amp:
+        name_parts.append("amp")
+    name_parts.append(timestamp)
+    return "_".join(name_parts)
+
+
+def infer_experiment_name_from_checkpoint(checkpoint_path: Union[str, Path]) -> Optional[str]:
+    """
+    尝试从 checkpoint 路径中推断实验目录名。
+
+    如果路径形如：
+    - `outputs/<experiment_name>/checkpoints/best.pt`
+
+    则返回 `<experiment_name>`。
+    """
+
+    checkpoint = Path(checkpoint_path)
+    if checkpoint.parent.name != "checkpoints":
+        return None
+    if checkpoint.parent.parent == checkpoint.parent:
+        return None
+    return checkpoint.parent.parent.name

@@ -23,6 +23,7 @@ from tqdm import tqdm
 from datasets import GastricSegmentationDataset, build_transforms
 from models import build_unet
 from utils import compute_segmentation_metrics, ensure_dir, save_json
+from utils import build_experiment_name, infer_experiment_name_from_checkpoint
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -230,7 +231,16 @@ def main() -> None:
     device = resolve_device(args.device)
     use_amp = bool(args.amp and device.type == "cuda")
 
-    experiment_name = args.experiment_name or f"{args.modality.lower()}_unet"
+    inferred_name = infer_experiment_name_from_checkpoint(args.checkpoint)
+    experiment_name = args.experiment_name or inferred_name or build_experiment_name(
+        modality=args.modality,
+        model_name="unet",
+        epochs=0,
+        batch_size=args.batch_size,
+        image_size=args.image_size,
+        scheduler="test",
+        use_amp=use_amp,
+    )
     experiment_dir = ensure_dir(args.output_dir / experiment_name)
     prediction_dir = (
         ensure_dir(experiment_dir / "test_predictions") if args.save_predictions else None

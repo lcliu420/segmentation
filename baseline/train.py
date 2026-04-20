@@ -32,6 +32,7 @@ from datasets import GastricSegmentationDataset, build_transforms
 from models import build_unet
 from utils import (
     BCEDiceLoss,
+    build_experiment_name,
     compute_segmentation_metrics,
     ensure_dir,
     save_history_csv,
@@ -429,7 +430,15 @@ def main() -> None:
     device = resolve_device(args.device)
     use_amp = bool(args.amp and device.type == "cuda")
 
-    experiment_name = args.experiment_name or f"{args.modality.lower()}_unet"
+    experiment_name = args.experiment_name or build_experiment_name(
+        modality=args.modality,
+        model_name="unet",
+        epochs=args.epochs,
+        batch_size=args.batch_size,
+        image_size=args.image_size,
+        scheduler=args.scheduler,
+        use_amp=use_amp,
+    )
     experiment_dir, checkpoint_dir, log_dir = create_experiment_dirs(
         args.output_dir, experiment_name
     )
