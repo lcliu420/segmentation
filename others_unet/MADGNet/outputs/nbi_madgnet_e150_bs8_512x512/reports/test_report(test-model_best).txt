@@ -1,0 +1,6 @@
+###################### TEST REPORT ######################
+Split         :	 test
+Checkpoint    :	 model_best.pth.tar
+Mean DSC    :	 0.8146
+Mean mIoU    :	 0.759
+###################### TEST REPORT ######################

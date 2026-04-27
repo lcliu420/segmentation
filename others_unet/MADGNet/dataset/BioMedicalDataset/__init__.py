@@ -1,0 +1,1 @@
+from .SkinSegmentation2018Dataset import ISIC2018Dataset

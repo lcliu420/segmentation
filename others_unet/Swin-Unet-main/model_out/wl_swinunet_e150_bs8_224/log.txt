@@ -1,0 +1,452 @@
+[18:30:46.114] Namespace(root_path='datasets/MyDataset/WL', dataset='WL', list_dir=None, num_classes=2, output_dir='model_out/wl_swinunet_e150_bs8_224', max_iterations=30000, max_epochs=150, batch_size=8, n_gpu=1, deterministic=1, base_lr=0.01, img_size=224, seed=1234, cfg='configs/swin_tiny_patch4_window7_224_lite.yaml', opts=None, zip=False, cache_mode='part', resume=None, accumulation_steps=None, use_checkpoint=False, amp_opt_level='O1', tag=None, eval=False, throughput=False, n_class=None, num_workers=8, eval_interval=1)
+[18:30:46.165] 175 iterations per epoch. 26250 max iterations 
+[18:31:26.279] Train epoch: 0 : loss : 0.415930, loss_ce: 0.568869, loss_dice: 0.313971, DSC: 0.346065, mIoU: 0.209237
+[18:31:33.671] Val epoch: 0 : loss : 0.301054, loss_ce: 0.423264, loss_dice: 0.219581, DSC: 0.666025, mIoU: 0.499279
+[18:31:33.810] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:32:12.855] Train epoch: 1 : loss : 0.303631, loss_ce: 0.441359, loss_dice: 0.211812, DSC: 0.644684, mIoU: 0.475671
+[18:32:20.224] Val epoch: 1 : loss : 0.294124, loss_ce: 0.400359, loss_dice: 0.223300, DSC: 0.554953, mIoU: 0.384038
+[18:32:20.473] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:32:57.197] Train epoch: 2 : loss : 0.259674, loss_ce: 0.383754, loss_dice: 0.176954, DSC: 0.696105, mIoU: 0.533866
+[18:33:04.401] Val epoch: 2 : loss : 0.245167, loss_ce: 0.361175, loss_dice: 0.167829, DSC: 0.731902, mIoU: 0.577165
+[18:33:04.652] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:33:43.300] Train epoch: 3 : loss : 0.235110, loss_ce: 0.351217, loss_dice: 0.157706, DSC: 0.727967, mIoU: 0.572286
+[18:33:50.558] Val epoch: 3 : loss : 0.220726, loss_ce: 0.311758, loss_dice: 0.160038, DSC: 0.718525, mIoU: 0.560702
+[18:33:50.787] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:34:29.030] Train epoch: 4 : loss : 0.226211, loss_ce: 0.338696, loss_dice: 0.151221, DSC: 0.738164, mIoU: 0.584993
+[18:34:36.283] Val epoch: 4 : loss : 0.212113, loss_ce: 0.314867, loss_dice: 0.143610, DSC: 0.772929, mIoU: 0.629898
+[18:34:36.544] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:35:15.553] Train epoch: 5 : loss : 0.218940, loss_ce: 0.327735, loss_dice: 0.146410, DSC: 0.747657, mIoU: 0.597007
+[18:35:22.840] Val epoch: 5 : loss : 0.214790, loss_ce: 0.321499, loss_dice: 0.143651, DSC: 0.766962, mIoU: 0.622010
+[18:35:22.986] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:36:01.777] Train epoch: 6 : loss : 0.206133, loss_ce: 0.310605, loss_dice: 0.136486, DSC: 0.764443, mIoU: 0.618703
+[18:36:09.094] Val epoch: 6 : loss : 0.193961, loss_ce: 0.281434, loss_dice: 0.135646, DSC: 0.768961, mIoU: 0.624644
+[18:36:09.392] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:36:47.595] Train epoch: 7 : loss : 0.207024, loss_ce: 0.311558, loss_dice: 0.137335, DSC: 0.765022, mIoU: 0.619462
+[18:36:54.868] Val epoch: 7 : loss : 0.215279, loss_ce: 0.323684, loss_dice: 0.143008, DSC: 0.773941, mIoU: 0.631243
+[18:36:55.119] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:37:34.418] Train epoch: 8 : loss : 0.200616, loss_ce: 0.303562, loss_dice: 0.131986, DSC: 0.770952, mIoU: 0.627276
+[18:37:41.657] Val epoch: 8 : loss : 0.194982, loss_ce: 0.290009, loss_dice: 0.131631, DSC: 0.786918, mIoU: 0.648693
+[18:37:41.890] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:38:19.782] Train epoch: 9 : loss : 0.186410, loss_ce: 0.282656, loss_dice: 0.122246, DSC: 0.787809, mIoU: 0.649906
+[18:38:27.035] Val epoch: 9 : loss : 0.187378, loss_ce: 0.278760, loss_dice: 0.126456, DSC: 0.787385, mIoU: 0.649329
+[18:38:27.262] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:39:04.753] Train epoch: 10 : loss : 0.188508, loss_ce: 0.285727, loss_dice: 0.123696, DSC: 0.786672, mIoU: 0.648359
+[18:39:12.023] Val epoch: 10 : loss : 0.178958, loss_ce: 0.260812, loss_dice: 0.124389, DSC: 0.791227, mIoU: 0.654570
+[18:39:12.307] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:39:50.112] Train epoch: 11 : loss : 0.186389, loss_ce: 0.282255, loss_dice: 0.122477, DSC: 0.788059, mIoU: 0.650245
+[18:39:57.432] Val epoch: 11 : loss : 0.179568, loss_ce: 0.264366, loss_dice: 0.123036, DSC: 0.792374, mIoU: 0.656142
+[18:39:57.712] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:40:38.225] Train epoch: 12 : loss : 0.176473, loss_ce: 0.268442, loss_dice: 0.115160, DSC: 0.800298, mIoU: 0.667080
+[18:40:45.517] Val epoch: 12 : loss : 0.183600, loss_ce: 0.273159, loss_dice: 0.123894, DSC: 0.797736, mIoU: 0.663529
+[18:40:45.806] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:41:24.366] Train epoch: 13 : loss : 0.173249, loss_ce: 0.263231, loss_dice: 0.113261, DSC: 0.804934, mIoU: 0.673548
+[18:41:31.629] Val epoch: 13 : loss : 0.177376, loss_ce: 0.257630, loss_dice: 0.123872, DSC: 0.787084, mIoU: 0.648919
+[18:41:31.875] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:42:10.000] Train epoch: 14 : loss : 0.171771, loss_ce: 0.261520, loss_dice: 0.111938, DSC: 0.808192, mIoU: 0.678122
+[18:42:17.159] Val epoch: 14 : loss : 0.173150, loss_ce: 0.252202, loss_dice: 0.120448, DSC: 0.790939, mIoU: 0.654176
+[18:42:17.405] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:42:55.811] Train epoch: 15 : loss : 0.168303, loss_ce: 0.256188, loss_dice: 0.109714, DSC: 0.810172, mIoU: 0.680915
+[18:43:03.055] Val epoch: 15 : loss : 0.193675, loss_ce: 0.278051, loss_dice: 0.137424, DSC: 0.753253, mIoU: 0.604175
+[18:43:03.336] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:43:42.770] Train epoch: 16 : loss : 0.167903, loss_ce: 0.255905, loss_dice: 0.109236, DSC: 0.811550, mIoU: 0.682864
+[18:43:50.000] Val epoch: 16 : loss : 0.206854, loss_ce: 0.316965, loss_dice: 0.133446, DSC: 0.786998, mIoU: 0.648803
+[18:43:50.241] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:44:29.992] Train epoch: 17 : loss : 0.164232, loss_ce: 0.250801, loss_dice: 0.106519, DSC: 0.816172, mIoU: 0.689434
+[18:44:37.282] Val epoch: 17 : loss : 0.181824, loss_ce: 0.269704, loss_dice: 0.123237, DSC: 0.792170, mIoU: 0.655862
+[18:44:37.563] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:45:17.171] Train epoch: 18 : loss : 0.161157, loss_ce: 0.245259, loss_dice: 0.105089, DSC: 0.819039, mIoU: 0.693536
+[18:45:24.538] Val epoch: 18 : loss : 0.169022, loss_ce: 0.248614, loss_dice: 0.115961, DSC: 0.807149, mIoU: 0.676655
+[18:45:24.825] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:46:03.431] Train epoch: 19 : loss : 0.158357, loss_ce: 0.241705, loss_dice: 0.102792, DSC: 0.821088, mIoU: 0.696479
+[18:46:10.708] Val epoch: 19 : loss : 0.173603, loss_ce: 0.252902, loss_dice: 0.120736, DSC: 0.790306, mIoU: 0.653311
+[18:46:10.976] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:46:51.260] Train epoch: 20 : loss : 0.158654, loss_ce: 0.242560, loss_dice: 0.102717, DSC: 0.821597, mIoU: 0.697213
+[18:46:58.502] Val epoch: 20 : loss : 0.180865, loss_ce: 0.271772, loss_dice: 0.120260, DSC: 0.805120, mIoU: 0.673809
+[18:46:58.765] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:47:37.668] Train epoch: 21 : loss : 0.154444, loss_ce: 0.235323, loss_dice: 0.100525, DSC: 0.826595, mIoU: 0.704441
+[18:47:45.061] Val epoch: 21 : loss : 0.179786, loss_ce: 0.270329, loss_dice: 0.119425, DSC: 0.803580, mIoU: 0.671653
+[18:47:45.359] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:48:24.432] Train epoch: 22 : loss : 0.152473, loss_ce: 0.232572, loss_dice: 0.099074, DSC: 0.828902, mIoU: 0.707799
+[18:48:31.628] Val epoch: 22 : loss : 0.192954, loss_ce: 0.293992, loss_dice: 0.125595, DSC: 0.796042, mIoU: 0.661187
+[18:48:31.872] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:49:10.609] Train epoch: 23 : loss : 0.150492, loss_ce: 0.230098, loss_dice: 0.097421, DSC: 0.830448, mIoU: 0.710057
+[18:49:17.825] Val epoch: 23 : loss : 0.166989, loss_ce: 0.251092, loss_dice: 0.110920, DSC: 0.811208, mIoU: 0.682381
+[18:49:18.092] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:49:57.836] Train epoch: 24 : loss : 0.148299, loss_ce: 0.227093, loss_dice: 0.095770, DSC: 0.833039, mIoU: 0.713853
+[18:50:05.025] Val epoch: 24 : loss : 0.177489, loss_ce: 0.266809, loss_dice: 0.117943, DSC: 0.797988, mIoU: 0.663877
+[18:50:05.255] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:50:43.640] Train epoch: 25 : loss : 0.144433, loss_ce: 0.221723, loss_dice: 0.092907, DSC: 0.837665, mIoU: 0.720674
+[18:50:50.801] Val epoch: 25 : loss : 0.170687, loss_ce: 0.252465, loss_dice: 0.116168, DSC: 0.805725, mIoU: 0.674656
+[18:50:51.052] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:51:28.296] Train epoch: 26 : loss : 0.140899, loss_ce: 0.216358, loss_dice: 0.090593, DSC: 0.842163, mIoU: 0.727359
+[18:51:35.504] Val epoch: 26 : loss : 0.192269, loss_ce: 0.294182, loss_dice: 0.124326, DSC: 0.800061, mIoU: 0.666751
+[18:51:35.747] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:52:14.763] Train epoch: 27 : loss : 0.140604, loss_ce: 0.215554, loss_dice: 0.090638, DSC: 0.841218, mIoU: 0.725950
+[18:52:22.059] Val epoch: 27 : loss : 0.167666, loss_ce: 0.254675, loss_dice: 0.109660, DSC: 0.814822, mIoU: 0.687510
+[18:52:22.337] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:53:00.319] Train epoch: 28 : loss : 0.138026, loss_ce: 0.212243, loss_dice: 0.088548, DSC: 0.845262, mIoU: 0.731995
+[18:53:07.502] Val epoch: 28 : loss : 0.189564, loss_ce: 0.290226, loss_dice: 0.122456, DSC: 0.801109, mIoU: 0.668208
+[18:53:07.753] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:53:45.475] Train epoch: 29 : loss : 0.138663, loss_ce: 0.212582, loss_dice: 0.089383, DSC: 0.843145, mIoU: 0.728824
+[18:53:52.641] Val epoch: 29 : loss : 0.166146, loss_ce: 0.250707, loss_dice: 0.109771, DSC: 0.817071, mIoU: 0.690718
+[18:53:52.888] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:54:30.320] Train epoch: 30 : loss : 0.137411, loss_ce: 0.210394, loss_dice: 0.088755, DSC: 0.846573, mIoU: 0.733964
+[18:54:37.500] Val epoch: 30 : loss : 0.173502, loss_ce: 0.263458, loss_dice: 0.113531, DSC: 0.812851, mIoU: 0.684708
+[18:54:37.770] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:55:16.137] Train epoch: 31 : loss : 0.136074, loss_ce: 0.208575, loss_dice: 0.087741, DSC: 0.847401, mIoU: 0.735209
+[18:55:23.424] Val epoch: 31 : loss : 0.165473, loss_ce: 0.247644, loss_dice: 0.110693, DSC: 0.813396, mIoU: 0.685482
+[18:55:23.692] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[18:56:02.255] Train epoch: 32 : loss : 0.133331, loss_ce: 0.205044, loss_dice: 0.085523, DSC: 0.850543, mIoU: 0.739952
+[18:56:09.514] Val epoch: 32 : loss : 0.172867, loss_ce: 0.260559, loss_dice: 0.114406, DSC: 0.802138, mIoU: 0.669642
+[18:56:09.789] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:56:47.305] Train epoch: 33 : loss : 0.132980, loss_ce: 0.204968, loss_dice: 0.084988, DSC: 0.851436, mIoU: 0.741304
+[18:56:54.596] Val epoch: 33 : loss : 0.172300, loss_ce: 0.258657, loss_dice: 0.114728, DSC: 0.797357, mIoU: 0.663004
+[18:56:54.862] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:57:33.633] Train epoch: 34 : loss : 0.132292, loss_ce: 0.202670, loss_dice: 0.085373, DSC: 0.850891, mIoU: 0.740480
+[18:57:40.973] Val epoch: 34 : loss : 0.174088, loss_ce: 0.267925, loss_dice: 0.111530, DSC: 0.815203, mIoU: 0.688053
+[18:57:41.199] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:58:19.804] Train epoch: 35 : loss : 0.129850, loss_ce: 0.198835, loss_dice: 0.083861, DSC: 0.854735, mIoU: 0.746321
+[18:58:27.108] Val epoch: 35 : loss : 0.167245, loss_ce: 0.254767, loss_dice: 0.108896, DSC: 0.818543, mIoU: 0.692825
+[18:58:27.319] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:59:07.165] Train epoch: 36 : loss : 0.127157, loss_ce: 0.195490, loss_dice: 0.081601, DSC: 0.856707, mIoU: 0.749334
+[18:59:14.273] Val epoch: 36 : loss : 0.169398, loss_ce: 0.261373, loss_dice: 0.108081, DSC: 0.820047, mIoU: 0.694982
+[18:59:14.512] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[18:59:53.952] Train epoch: 37 : loss : 0.122883, loss_ce: 0.188938, loss_dice: 0.078846, DSC: 0.861769, mIoU: 0.757112
+[19:00:01.207] Val epoch: 37 : loss : 0.169250, loss_ce: 0.260314, loss_dice: 0.108540, DSC: 0.819827, mIoU: 0.694667
+[19:00:01.446] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:00:40.555] Train epoch: 38 : loss : 0.124779, loss_ce: 0.192172, loss_dice: 0.079850, DSC: 0.860625, mIoU: 0.755348
+[19:00:47.737] Val epoch: 38 : loss : 0.170929, loss_ce: 0.256275, loss_dice: 0.114031, DSC: 0.804150, mIoU: 0.672451
+[19:00:48.022] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:01:27.475] Train epoch: 39 : loss : 0.121920, loss_ce: 0.188243, loss_dice: 0.077705, DSC: 0.863272, mIoU: 0.759435
+[19:01:34.765] Val epoch: 39 : loss : 0.164224, loss_ce: 0.250965, loss_dice: 0.106397, DSC: 0.822674, mIoU: 0.698765
+[19:01:34.972] save model to model_out/wl_swinunet_e150_bs8_224/best_model.pth
+[19:02:15.331] Train epoch: 40 : loss : 0.120431, loss_ce: 0.185872, loss_dice: 0.076803, DSC: 0.864912, mIoU: 0.761978
+[19:02:22.608] Val epoch: 40 : loss : 0.175966, loss_ce: 0.273143, loss_dice: 0.111182, DSC: 0.818390, mIoU: 0.692605
+[19:02:22.842] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:03:01.441] Train epoch: 41 : loss : 0.118066, loss_ce: 0.182307, loss_dice: 0.075239, DSC: 0.865976, mIoU: 0.763631
+[19:03:08.678] Val epoch: 41 : loss : 0.178789, loss_ce: 0.278742, loss_dice: 0.112153, DSC: 0.816179, mIoU: 0.689445
+[19:03:08.934] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:03:46.548] Train epoch: 42 : loss : 0.120807, loss_ce: 0.186776, loss_dice: 0.076828, DSC: 0.865808, mIoU: 0.763370
+[19:03:53.903] Val epoch: 42 : loss : 0.170698, loss_ce: 0.262166, loss_dice: 0.109720, DSC: 0.818376, mIoU: 0.692585
+[19:03:54.173] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:04:32.604] Train epoch: 43 : loss : 0.118545, loss_ce: 0.182197, loss_dice: 0.076111, DSC: 0.868009, mIoU: 0.766798
+[19:04:39.815] Val epoch: 43 : loss : 0.175651, loss_ce: 0.273333, loss_dice: 0.110529, DSC: 0.819085, mIoU: 0.693602
+[19:04:40.098] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:05:18.775] Train epoch: 44 : loss : 0.116017, loss_ce: 0.179746, loss_dice: 0.073532, DSC: 0.870157, mIoU: 0.770158
+[19:05:26.176] Val epoch: 44 : loss : 0.171034, loss_ce: 0.263828, loss_dice: 0.109171, DSC: 0.822185, mIoU: 0.698059
+[19:05:26.477] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:06:03.797] Train epoch: 45 : loss : 0.116778, loss_ce: 0.180062, loss_dice: 0.074589, DSC: 0.869270, mIoU: 0.768770
+[19:06:11.031] Val epoch: 45 : loss : 0.180690, loss_ce: 0.280129, loss_dice: 0.114397, DSC: 0.812888, mIoU: 0.684761
+[19:06:11.257] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:06:48.945] Train epoch: 46 : loss : 0.114435, loss_ce: 0.176208, loss_dice: 0.073253, DSC: 0.871139, mIoU: 0.771697
+[19:06:56.321] Val epoch: 46 : loss : 0.167269, loss_ce: 0.255955, loss_dice: 0.108146, DSC: 0.816956, mIoU: 0.690555
+[19:06:56.574] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:07:36.093] Train epoch: 47 : loss : 0.113440, loss_ce: 0.175469, loss_dice: 0.072087, DSC: 0.872618, mIoU: 0.774022
+[19:07:43.410] Val epoch: 47 : loss : 0.166869, loss_ce: 0.257194, loss_dice: 0.106652, DSC: 0.822671, mIoU: 0.698760
+[19:07:43.678] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:08:22.009] Train epoch: 48 : loss : 0.107284, loss_ce: 0.166317, loss_dice: 0.067929, DSC: 0.879231, mIoU: 0.784490
+[19:08:29.385] Val epoch: 48 : loss : 0.172911, loss_ce: 0.267793, loss_dice: 0.109657, DSC: 0.815524, mIoU: 0.688510
+[19:08:29.677] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:09:09.701] Train epoch: 49 : loss : 0.108976, loss_ce: 0.168101, loss_dice: 0.069560, DSC: 0.877424, mIoU: 0.781616
+[19:09:16.989] Val epoch: 49 : loss : 0.188632, loss_ce: 0.298878, loss_dice: 0.115134, DSC: 0.814453, mIoU: 0.686986
+[19:09:17.216] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:09:57.134] Train epoch: 50 : loss : 0.108935, loss_ce: 0.168027, loss_dice: 0.069541, DSC: 0.877862, mIoU: 0.782312
+[19:10:04.326] Val epoch: 50 : loss : 0.174381, loss_ce: 0.273047, loss_dice: 0.108604, DSC: 0.821714, mIoU: 0.697381
+[19:10:04.563] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:10:41.836] Train epoch: 51 : loss : 0.106205, loss_ce: 0.163686, loss_dice: 0.067885, DSC: 0.881452, mIoU: 0.788032
+[19:10:49.066] Val epoch: 51 : loss : 0.180167, loss_ce: 0.278187, loss_dice: 0.114820, DSC: 0.804513, mIoU: 0.672959
+[19:10:49.344] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:11:27.513] Train epoch: 52 : loss : 0.107066, loss_ce: 0.164896, loss_dice: 0.068513, DSC: 0.880327, mIoU: 0.786236
+[19:11:34.743] Val epoch: 52 : loss : 0.172674, loss_ce: 0.261193, loss_dice: 0.113661, DSC: 0.802153, mIoU: 0.669663
+[19:11:35.014] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:12:11.880] Train epoch: 53 : loss : 0.107179, loss_ce: 0.165746, loss_dice: 0.068134, DSC: 0.880386, mIoU: 0.786329
+[19:12:19.213] Val epoch: 53 : loss : 0.190589, loss_ce: 0.302062, loss_dice: 0.116275, DSC: 0.812195, mIoU: 0.683778
+[19:12:19.450] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:12:57.662] Train epoch: 54 : loss : 0.106333, loss_ce: 0.164787, loss_dice: 0.067364, DSC: 0.881135, mIoU: 0.787526
+[19:13:04.941] Val epoch: 54 : loss : 0.169921, loss_ce: 0.258096, loss_dice: 0.111138, DSC: 0.806132, mIoU: 0.675228
+[19:13:05.200] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:13:44.029] Train epoch: 55 : loss : 0.104623, loss_ce: 0.161910, loss_dice: 0.066432, DSC: 0.883279, mIoU: 0.790957
+[19:13:51.247] Val epoch: 55 : loss : 0.192807, loss_ce: 0.307021, loss_dice: 0.116665, DSC: 0.812194, mIoU: 0.683776
+[19:13:51.527] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:14:29.121] Train epoch: 56 : loss : 0.100141, loss_ce: 0.155360, loss_dice: 0.063329, DSC: 0.888495, mIoU: 0.799362
+[19:14:36.327] Val epoch: 56 : loss : 0.182889, loss_ce: 0.289565, loss_dice: 0.111772, DSC: 0.816218, mIoU: 0.689500
+[19:14:36.591] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:15:14.570] Train epoch: 57 : loss : 0.097389, loss_ce: 0.150858, loss_dice: 0.061743, DSC: 0.890676, mIoU: 0.802900
+[19:15:21.761] Val epoch: 57 : loss : 0.172572, loss_ce: 0.267421, loss_dice: 0.109339, DSC: 0.820201, mIoU: 0.695204
+[19:15:22.014] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:15:59.479] Train epoch: 58 : loss : 0.099599, loss_ce: 0.153536, loss_dice: 0.063641, DSC: 0.888187, mIoU: 0.798863
+[19:16:06.804] Val epoch: 58 : loss : 0.173800, loss_ce: 0.269051, loss_dice: 0.110300, DSC: 0.813762, mIoU: 0.686002
+[19:16:07.095] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:16:46.157] Train epoch: 59 : loss : 0.097738, loss_ce: 0.152099, loss_dice: 0.061497, DSC: 0.891026, mIoU: 0.803468
+[19:16:53.405] Val epoch: 59 : loss : 0.170897, loss_ce: 0.267960, loss_dice: 0.106188, DSC: 0.822407, mIoU: 0.698379
+[19:16:53.682] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:17:32.208] Train epoch: 60 : loss : 0.097491, loss_ce: 0.151300, loss_dice: 0.061617, DSC: 0.889933, mIoU: 0.801693
+[19:17:39.405] Val epoch: 60 : loss : 0.175292, loss_ce: 0.276054, loss_dice: 0.108118, DSC: 0.817532, mIoU: 0.691378
+[19:17:39.670] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:18:18.412] Train epoch: 61 : loss : 0.099343, loss_ce: 0.153560, loss_dice: 0.063198, DSC: 0.889102, mIoU: 0.800346
+[19:18:25.713] Val epoch: 61 : loss : 0.178069, loss_ce: 0.276384, loss_dice: 0.112526, DSC: 0.810804, mIoU: 0.681809
+[19:18:25.953] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:19:04.440] Train epoch: 62 : loss : 0.095422, loss_ce: 0.148030, loss_dice: 0.060350, DSC: 0.893443, mIoU: 0.807408
+[19:19:11.566] Val epoch: 62 : loss : 0.180043, loss_ce: 0.283942, loss_dice: 0.110777, DSC: 0.815067, mIoU: 0.687860
+[19:19:11.815] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:19:50.388] Train epoch: 63 : loss : 0.097618, loss_ce: 0.151368, loss_dice: 0.061784, DSC: 0.891137, mIoU: 0.803650
+[19:19:57.626] Val epoch: 63 : loss : 0.179722, loss_ce: 0.281870, loss_dice: 0.111623, DSC: 0.809499, mIoU: 0.679964
+[19:19:57.887] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:20:37.855] Train epoch: 64 : loss : 0.091850, loss_ce: 0.142331, loss_dice: 0.058195, DSC: 0.896906, mIoU: 0.813083
+[19:20:45.053] Val epoch: 64 : loss : 0.177219, loss_ce: 0.283631, loss_dice: 0.106278, DSC: 0.824793, mIoU: 0.701827
+[19:20:45.333] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:21:23.722] Train epoch: 65 : loss : 0.090680, loss_ce: 0.141331, loss_dice: 0.056913, DSC: 0.898231, mIoU: 0.815263
+[19:21:31.082] Val epoch: 65 : loss : 0.183647, loss_ce: 0.288124, loss_dice: 0.113996, DSC: 0.805073, mIoU: 0.673742
+[19:21:31.308] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:22:11.834] Train epoch: 66 : loss : 0.092556, loss_ce: 0.143075, loss_dice: 0.058877, DSC: 0.896862, mIoU: 0.813010
+[19:22:19.161] Val epoch: 66 : loss : 0.171970, loss_ce: 0.271395, loss_dice: 0.105686, DSC: 0.823451, mIoU: 0.699887
+[19:22:19.405] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:22:57.173] Train epoch: 67 : loss : 0.089044, loss_ce: 0.138664, loss_dice: 0.055963, DSC: 0.899702, mIoU: 0.817689
+[19:23:04.441] Val epoch: 67 : loss : 0.187879, loss_ce: 0.302737, loss_dice: 0.111306, DSC: 0.816327, mIoU: 0.689655
+[19:23:04.707] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:23:44.022] Train epoch: 68 : loss : 0.091456, loss_ce: 0.142358, loss_dice: 0.057521, DSC: 0.897264, mIoU: 0.813670
+[19:23:51.278] Val epoch: 68 : loss : 0.175991, loss_ce: 0.277090, loss_dice: 0.108591, DSC: 0.816883, mIoU: 0.690450
+[19:23:51.552] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:24:29.338] Train epoch: 69 : loss : 0.090633, loss_ce: 0.141042, loss_dice: 0.057027, DSC: 0.897982, mIoU: 0.814853
+[19:24:36.575] Val epoch: 69 : loss : 0.184865, loss_ce: 0.294287, loss_dice: 0.111917, DSC: 0.817269, mIoU: 0.691001
+[19:24:36.775] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:25:15.905] Train epoch: 70 : loss : 0.089099, loss_ce: 0.138396, loss_dice: 0.056235, DSC: 0.900304, mIoU: 0.818684
+[19:25:23.215] Val epoch: 70 : loss : 0.171213, loss_ce: 0.270468, loss_dice: 0.105043, DSC: 0.827743, mIoU: 0.706111
+[19:25:23.491] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:26:04.274] Train epoch: 71 : loss : 0.085372, loss_ce: 0.132936, loss_dice: 0.053662, DSC: 0.904359, mIoU: 0.825416
+[19:26:11.445] Val epoch: 71 : loss : 0.184007, loss_ce: 0.291951, loss_dice: 0.112044, DSC: 0.815552, mIoU: 0.688551
+[19:26:11.683] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:26:48.940] Train epoch: 72 : loss : 0.089936, loss_ce: 0.138961, loss_dice: 0.057252, DSC: 0.899943, mIoU: 0.818087
+[19:26:56.241] Val epoch: 72 : loss : 0.183035, loss_ce: 0.293627, loss_dice: 0.109307, DSC: 0.821621, mIoU: 0.697247
+[19:26:56.523] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:27:34.721] Train epoch: 73 : loss : 0.088692, loss_ce: 0.138363, loss_dice: 0.055578, DSC: 0.900718, mIoU: 0.819369
+[19:27:41.926] Val epoch: 73 : loss : 0.175407, loss_ce: 0.277657, loss_dice: 0.107240, DSC: 0.820739, mIoU: 0.695978
+[19:27:42.159] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:28:19.836] Train epoch: 74 : loss : 0.088193, loss_ce: 0.137027, loss_dice: 0.055636, DSC: 0.900851, mIoU: 0.819589
+[19:28:27.113] Val epoch: 74 : loss : 0.179593, loss_ce: 0.286735, loss_dice: 0.108165, DSC: 0.821736, mIoU: 0.697413
+[19:28:27.325] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:29:08.824] Train epoch: 75 : loss : 0.086057, loss_ce: 0.133598, loss_dice: 0.054362, DSC: 0.903119, mIoU: 0.823351
+[19:29:16.026] Val epoch: 75 : loss : 0.178938, loss_ce: 0.286156, loss_dice: 0.107458, DSC: 0.822709, mIoU: 0.698815
+[19:29:16.269] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:29:54.109] Train epoch: 76 : loss : 0.087498, loss_ce: 0.135797, loss_dice: 0.055298, DSC: 0.901357, mIoU: 0.820428
+[19:30:01.490] Val epoch: 76 : loss : 0.186841, loss_ce: 0.300980, loss_dice: 0.110748, DSC: 0.819118, mIoU: 0.693649
+[19:30:01.765] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:30:41.781] Train epoch: 77 : loss : 0.086239, loss_ce: 0.134467, loss_dice: 0.054088, DSC: 0.903370, mIoU: 0.823769
+[19:30:49.011] Val epoch: 77 : loss : 0.173564, loss_ce: 0.277184, loss_dice: 0.104484, DSC: 0.826905, mIoU: 0.704892
+[19:30:49.282] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:31:27.526] Train epoch: 78 : loss : 0.084451, loss_ce: 0.131347, loss_dice: 0.053186, DSC: 0.905409, mIoU: 0.827166
+[19:31:34.653] Val epoch: 78 : loss : 0.173276, loss_ce: 0.276388, loss_dice: 0.104535, DSC: 0.826601, mIoU: 0.704451
+[19:31:34.935] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:32:13.633] Train epoch: 79 : loss : 0.080027, loss_ce: 0.124861, loss_dice: 0.050138, DSC: 0.910276, mIoU: 0.835328
+[19:32:20.908] Val epoch: 79 : loss : 0.181542, loss_ce: 0.289254, loss_dice: 0.109733, DSC: 0.814333, mIoU: 0.686814
+[19:32:21.123] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:32:59.534] Train epoch: 80 : loss : 0.082914, loss_ce: 0.129588, loss_dice: 0.051798, DSC: 0.907397, mIoU: 0.830492
+[19:33:06.776] Val epoch: 80 : loss : 0.174316, loss_ce: 0.277046, loss_dice: 0.105829, DSC: 0.822748, mIoU: 0.698872
+[19:33:07.047] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:33:44.794] Train epoch: 81 : loss : 0.082289, loss_ce: 0.127820, loss_dice: 0.051935, DSC: 0.907829, mIoU: 0.831214
+[19:33:52.060] Val epoch: 81 : loss : 0.181083, loss_ce: 0.290922, loss_dice: 0.107857, DSC: 0.820088, mIoU: 0.695042
+[19:33:52.348] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:34:31.144] Train epoch: 82 : loss : 0.080768, loss_ce: 0.125841, loss_dice: 0.050719, DSC: 0.909206, mIoU: 0.833527
+[19:34:38.340] Val epoch: 82 : loss : 0.188661, loss_ce: 0.307340, loss_dice: 0.109542, DSC: 0.819266, mIoU: 0.693862
+[19:34:38.615] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:35:17.204] Train epoch: 83 : loss : 0.079614, loss_ce: 0.124045, loss_dice: 0.049993, DSC: 0.910816, mIoU: 0.836237
+[19:35:24.529] Val epoch: 83 : loss : 0.186119, loss_ce: 0.299877, loss_dice: 0.110281, DSC: 0.817978, mIoU: 0.692016
+[19:35:24.772] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:36:04.271] Train epoch: 84 : loss : 0.081318, loss_ce: 0.126883, loss_dice: 0.050942, DSC: 0.908972, mIoU: 0.833134
+[19:36:11.488] Val epoch: 84 : loss : 0.185722, loss_ce: 0.303253, loss_dice: 0.107368, DSC: 0.824886, mIoU: 0.701962
+[19:36:11.757] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:36:50.148] Train epoch: 85 : loss : 0.078747, loss_ce: 0.122533, loss_dice: 0.049557, DSC: 0.911673, mIoU: 0.837683
+[19:36:57.398] Val epoch: 85 : loss : 0.188346, loss_ce: 0.298881, loss_dice: 0.114655, DSC: 0.807868, mIoU: 0.677667
+[19:36:57.628] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:37:37.696] Train epoch: 86 : loss : 0.078339, loss_ce: 0.122315, loss_dice: 0.049021, DSC: 0.912095, mIoU: 0.838396
+[19:37:44.918] Val epoch: 86 : loss : 0.180919, loss_ce: 0.293564, loss_dice: 0.105822, DSC: 0.824897, mIoU: 0.701979
+[19:37:45.191] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:38:23.485] Train epoch: 87 : loss : 0.078168, loss_ce: 0.121416, loss_dice: 0.049335, DSC: 0.912689, mIoU: 0.839400
+[19:38:30.747] Val epoch: 87 : loss : 0.181204, loss_ce: 0.292235, loss_dice: 0.107183, DSC: 0.821705, mIoU: 0.697368
+[19:38:30.982] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:39:09.970] Train epoch: 88 : loss : 0.081181, loss_ce: 0.126215, loss_dice: 0.051158, DSC: 0.909211, mIoU: 0.833536
+[19:39:17.290] Val epoch: 88 : loss : 0.188164, loss_ce: 0.308284, loss_dice: 0.108083, DSC: 0.824183, mIoU: 0.700944
+[19:39:17.537] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:39:55.019] Train epoch: 89 : loss : 0.077329, loss_ce: 0.120496, loss_dice: 0.048551, DSC: 0.913169, mIoU: 0.840213
+[19:40:02.296] Val epoch: 89 : loss : 0.186578, loss_ce: 0.303937, loss_dice: 0.108339, DSC: 0.820696, mIoU: 0.695915
+[19:40:02.580] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:40:41.874] Train epoch: 90 : loss : 0.076209, loss_ce: 0.119029, loss_dice: 0.047663, DSC: 0.914227, mIoU: 0.842006
+[19:40:49.127] Val epoch: 90 : loss : 0.182531, loss_ce: 0.295682, loss_dice: 0.107096, DSC: 0.822093, mIoU: 0.697926
+[19:40:49.407] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:41:28.568] Train epoch: 91 : loss : 0.077315, loss_ce: 0.120450, loss_dice: 0.048559, DSC: 0.912694, mIoU: 0.839409
+[19:41:35.802] Val epoch: 91 : loss : 0.185546, loss_ce: 0.300251, loss_dice: 0.109076, DSC: 0.816164, mIoU: 0.689423
+[19:41:36.047] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:42:15.785] Train epoch: 92 : loss : 0.076051, loss_ce: 0.118461, loss_dice: 0.047777, DSC: 0.914554, mIoU: 0.842561
+[19:42:23.059] Val epoch: 92 : loss : 0.183255, loss_ce: 0.297579, loss_dice: 0.107039, DSC: 0.822547, mIoU: 0.698582
+[19:42:23.325] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:43:03.144] Train epoch: 93 : loss : 0.074357, loss_ce: 0.116369, loss_dice: 0.046349, DSC: 0.916917, mIoU: 0.846580
+[19:43:10.363] Val epoch: 93 : loss : 0.185311, loss_ce: 0.302485, loss_dice: 0.107195, DSC: 0.823973, mIoU: 0.700641
+[19:43:10.626] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:43:47.423] Train epoch: 94 : loss : 0.075193, loss_ce: 0.117028, loss_dice: 0.047302, DSC: 0.915619, mIoU: 0.844370
+[19:43:54.570] Val epoch: 94 : loss : 0.180409, loss_ce: 0.292897, loss_dice: 0.105417, DSC: 0.825345, mIoU: 0.702627
+[19:43:54.837] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:44:34.807] Train epoch: 95 : loss : 0.076012, loss_ce: 0.118056, loss_dice: 0.047983, DSC: 0.915316, mIoU: 0.843854
+[19:44:42.045] Val epoch: 95 : loss : 0.186378, loss_ce: 0.302792, loss_dice: 0.108769, DSC: 0.819228, mIoU: 0.693808
+[19:44:42.284] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:45:20.062] Train epoch: 96 : loss : 0.074571, loss_ce: 0.116182, loss_dice: 0.046830, DSC: 0.916222, mIoU: 0.845397
+[19:45:27.468] Val epoch: 96 : loss : 0.182868, loss_ce: 0.299325, loss_dice: 0.105230, DSC: 0.827877, mIoU: 0.706305
+[19:45:27.705] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:46:07.895] Train epoch: 97 : loss : 0.073035, loss_ce: 0.114148, loss_dice: 0.045626, DSC: 0.917606, mIoU: 0.847756
+[19:46:15.205] Val epoch: 97 : loss : 0.180515, loss_ce: 0.295668, loss_dice: 0.103747, DSC: 0.829028, mIoU: 0.707983
+[19:46:15.490] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:46:54.360] Train epoch: 98 : loss : 0.072686, loss_ce: 0.113391, loss_dice: 0.045549, DSC: 0.917979, mIoU: 0.848393
+[19:47:01.822] Val epoch: 98 : loss : 0.189201, loss_ce: 0.310903, loss_dice: 0.108066, DSC: 0.821925, mIoU: 0.697685
+[19:47:02.098] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:47:40.899] Train epoch: 99 : loss : 0.071977, loss_ce: 0.112148, loss_dice: 0.045197, DSC: 0.919176, mIoU: 0.850440
+[19:47:48.164] Val epoch: 99 : loss : 0.184634, loss_ce: 0.302397, loss_dice: 0.106125, DSC: 0.824400, mIoU: 0.701259
+[19:47:48.397] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:48:28.800] Train epoch: 100 : loss : 0.070062, loss_ce: 0.109850, loss_dice: 0.043536, DSC: 0.921355, mIoU: 0.854179
+[19:48:36.026] Val epoch: 100 : loss : 0.190883, loss_ce: 0.314796, loss_dice: 0.108275, DSC: 0.824160, mIoU: 0.700911
+[19:48:36.263] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:49:15.065] Train epoch: 101 : loss : 0.072504, loss_ce: 0.113184, loss_dice: 0.045383, DSC: 0.919059, mIoU: 0.850240
+[19:49:22.502] Val epoch: 101 : loss : 0.186051, loss_ce: 0.305006, loss_dice: 0.106747, DSC: 0.824931, mIoU: 0.702028
+[19:49:22.755] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:50:03.495] Train epoch: 102 : loss : 0.072558, loss_ce: 0.113046, loss_dice: 0.045567, DSC: 0.918301, mIoU: 0.848943
+[19:50:10.646] Val epoch: 102 : loss : 0.187151, loss_ce: 0.304809, loss_dice: 0.108712, DSC: 0.820292, mIoU: 0.695335
+[19:50:10.911] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:50:48.400] Train epoch: 103 : loss : 0.071108, loss_ce: 0.110794, loss_dice: 0.044650, DSC: 0.920224, mIoU: 0.852236
+[19:50:55.596] Val epoch: 103 : loss : 0.190653, loss_ce: 0.316508, loss_dice: 0.106749, DSC: 0.827737, mIoU: 0.706101
+[19:50:55.856] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:51:33.930] Train epoch: 104 : loss : 0.072332, loss_ce: 0.112914, loss_dice: 0.045277, DSC: 0.918882, mIoU: 0.849937
+[19:51:41.187] Val epoch: 104 : loss : 0.188761, loss_ce: 0.307660, loss_dice: 0.109495, DSC: 0.820501, mIoU: 0.695635
+[19:51:41.442] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:52:20.408] Train epoch: 105 : loss : 0.069434, loss_ce: 0.108484, loss_dice: 0.043402, DSC: 0.921563, mIoU: 0.854536
+[19:52:27.559] Val epoch: 105 : loss : 0.187020, loss_ce: 0.305896, loss_dice: 0.107769, DSC: 0.822431, mIoU: 0.698414
+[19:52:27.831] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:53:06.894] Train epoch: 106 : loss : 0.069146, loss_ce: 0.108027, loss_dice: 0.043226, DSC: 0.921593, mIoU: 0.854588
+[19:53:14.250] Val epoch: 106 : loss : 0.191579, loss_ce: 0.314724, loss_dice: 0.109482, DSC: 0.817994, mIoU: 0.692038
+[19:53:14.478] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:53:53.374] Train epoch: 107 : loss : 0.068734, loss_ce: 0.107263, loss_dice: 0.043049, DSC: 0.922582, mIoU: 0.856289
+[19:54:00.655] Val epoch: 107 : loss : 0.195534, loss_ce: 0.323981, loss_dice: 0.109902, DSC: 0.820337, mIoU: 0.695399
+[19:54:00.924] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:54:39.875] Train epoch: 108 : loss : 0.067990, loss_ce: 0.106164, loss_dice: 0.042541, DSC: 0.923746, mIoU: 0.858298
+[19:54:47.158] Val epoch: 108 : loss : 0.192127, loss_ce: 0.315619, loss_dice: 0.109799, DSC: 0.821354, mIoU: 0.696862
+[19:54:47.409] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:55:27.037] Train epoch: 109 : loss : 0.068736, loss_ce: 0.106960, loss_dice: 0.043254, DSC: 0.923355, mIoU: 0.857623
+[19:55:34.329] Val epoch: 109 : loss : 0.195958, loss_ce: 0.320756, loss_dice: 0.112758, DSC: 0.813201, mIoU: 0.685205
+[19:55:34.612] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:56:13.370] Train epoch: 110 : loss : 0.068677, loss_ce: 0.107244, loss_dice: 0.042965, DSC: 0.922247, mIoU: 0.855714
+[19:56:20.608] Val epoch: 110 : loss : 0.190645, loss_ce: 0.314812, loss_dice: 0.107866, DSC: 0.825035, mIoU: 0.702179
+[19:56:20.876] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:56:58.503] Train epoch: 111 : loss : 0.067889, loss_ce: 0.105677, loss_dice: 0.042697, DSC: 0.924026, mIoU: 0.858782
+[19:57:05.832] Val epoch: 111 : loss : 0.195117, loss_ce: 0.323477, loss_dice: 0.109543, DSC: 0.821723, mIoU: 0.697394
+[19:57:06.090] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:57:43.695] Train epoch: 112 : loss : 0.069011, loss_ce: 0.108111, loss_dice: 0.042944, DSC: 0.922015, mIoU: 0.855314
+[19:57:50.919] Val epoch: 112 : loss : 0.185151, loss_ce: 0.300439, loss_dice: 0.108292, DSC: 0.821111, mIoU: 0.696513
+[19:57:51.153] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:58:30.716] Train epoch: 113 : loss : 0.067326, loss_ce: 0.105563, loss_dice: 0.041835, DSC: 0.923895, mIoU: 0.858555
+[19:58:37.974] Val epoch: 113 : loss : 0.188710, loss_ce: 0.310887, loss_dice: 0.107259, DSC: 0.825327, mIoU: 0.702601
+[19:58:38.224] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[19:59:16.714] Train epoch: 114 : loss : 0.067552, loss_ce: 0.105353, loss_dice: 0.042351, DSC: 0.924090, mIoU: 0.858891
+[19:59:23.995] Val epoch: 114 : loss : 0.189677, loss_ce: 0.313747, loss_dice: 0.106963, DSC: 0.823084, mIoU: 0.699357
+[19:59:24.252] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:00:02.503] Train epoch: 115 : loss : 0.065666, loss_ce: 0.102632, loss_dice: 0.041022, DSC: 0.926333, mIoU: 0.862776
+[20:00:09.764] Val epoch: 115 : loss : 0.197297, loss_ce: 0.323639, loss_dice: 0.113069, DSC: 0.812945, mIoU: 0.684842
+[20:00:10.045] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:00:49.137] Train epoch: 116 : loss : 0.067386, loss_ce: 0.105198, loss_dice: 0.042178, DSC: 0.924293, mIoU: 0.859242
+[20:00:56.363] Val epoch: 116 : loss : 0.194222, loss_ce: 0.322552, loss_dice: 0.108669, DSC: 0.822667, mIoU: 0.698755
+[20:00:56.606] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:01:36.174] Train epoch: 117 : loss : 0.066809, loss_ce: 0.104411, loss_dice: 0.041740, DSC: 0.924987, mIoU: 0.860443
+[20:01:43.372] Val epoch: 117 : loss : 0.193345, loss_ce: 0.321287, loss_dice: 0.108051, DSC: 0.822544, mIoU: 0.698577
+[20:01:43.638] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:02:22.133] Train epoch: 118 : loss : 0.065549, loss_ce: 0.102430, loss_dice: 0.040961, DSC: 0.925498, mIoU: 0.861328
+[20:02:29.310] Val epoch: 118 : loss : 0.195475, loss_ce: 0.324885, loss_dice: 0.109202, DSC: 0.822168, mIoU: 0.698035
+[20:02:29.566] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:03:07.472] Train epoch: 119 : loss : 0.065068, loss_ce: 0.101566, loss_dice: 0.040736, DSC: 0.926565, mIoU: 0.863177
+[20:03:14.606] Val epoch: 119 : loss : 0.198261, loss_ce: 0.331835, loss_dice: 0.109212, DSC: 0.824434, mIoU: 0.701308
+[20:03:14.871] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:03:53.072] Train epoch: 120 : loss : 0.065145, loss_ce: 0.101846, loss_dice: 0.040678, DSC: 0.926726, mIoU: 0.863457
+[20:04:00.300] Val epoch: 120 : loss : 0.192899, loss_ce: 0.321363, loss_dice: 0.107256, DSC: 0.825466, mIoU: 0.702803
+[20:04:00.551] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:04:38.817] Train epoch: 121 : loss : 0.063520, loss_ce: 0.099283, loss_dice: 0.039679, DSC: 0.928465, mIoU: 0.866481
+[20:04:45.980] Val epoch: 121 : loss : 0.192936, loss_ce: 0.321363, loss_dice: 0.107317, DSC: 0.823933, mIoU: 0.700584
+[20:04:46.213] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:05:24.221] Train epoch: 122 : loss : 0.064346, loss_ce: 0.100792, loss_dice: 0.040049, DSC: 0.927145, mIoU: 0.864184
+[20:05:31.405] Val epoch: 122 : loss : 0.195083, loss_ce: 0.326133, loss_dice: 0.107716, DSC: 0.826299, mIoU: 0.704012
+[20:05:31.655] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:06:13.565] Train epoch: 123 : loss : 0.063505, loss_ce: 0.099085, loss_dice: 0.039786, DSC: 0.928541, mIoU: 0.866613
+[20:06:20.740] Val epoch: 123 : loss : 0.195711, loss_ce: 0.328379, loss_dice: 0.107265, DSC: 0.825729, mIoU: 0.703184
+[20:06:21.004] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:06:59.678] Train epoch: 124 : loss : 0.064495, loss_ce: 0.100935, loss_dice: 0.040203, DSC: 0.927358, mIoU: 0.864555
+[20:07:06.949] Val epoch: 124 : loss : 0.198276, loss_ce: 0.330105, loss_dice: 0.110391, DSC: 0.819215, mIoU: 0.693788
+[20:07:07.239] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:07:45.182] Train epoch: 125 : loss : 0.063702, loss_ce: 0.100077, loss_dice: 0.039453, DSC: 0.927997, mIoU: 0.865667
+[20:07:52.343] Val epoch: 125 : loss : 0.196677, loss_ce: 0.328331, loss_dice: 0.108907, DSC: 0.823449, mIoU: 0.699884
+[20:07:52.567] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:08:29.435] Train epoch: 126 : loss : 0.062825, loss_ce: 0.098217, loss_dice: 0.039230, DSC: 0.929383, mIoU: 0.868081
+[20:08:36.709] Val epoch: 126 : loss : 0.196149, loss_ce: 0.327942, loss_dice: 0.108288, DSC: 0.824057, mIoU: 0.700762
+[20:08:36.962] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:09:15.970] Train epoch: 127 : loss : 0.062006, loss_ce: 0.097057, loss_dice: 0.038639, DSC: 0.929889, mIoU: 0.868965
+[20:09:23.251] Val epoch: 127 : loss : 0.195990, loss_ce: 0.326443, loss_dice: 0.109022, DSC: 0.821922, mIoU: 0.697681
+[20:09:23.502] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:10:02.387] Train epoch: 128 : loss : 0.062135, loss_ce: 0.097129, loss_dice: 0.038806, DSC: 0.930125, mIoU: 0.869376
+[20:10:09.757] Val epoch: 128 : loss : 0.197450, loss_ce: 0.331382, loss_dice: 0.108162, DSC: 0.825856, mIoU: 0.703368
+[20:10:10.021] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:10:47.737] Train epoch: 129 : loss : 0.062212, loss_ce: 0.097117, loss_dice: 0.038942, DSC: 0.929914, mIoU: 0.869009
+[20:10:54.966] Val epoch: 129 : loss : 0.197293, loss_ce: 0.330417, loss_dice: 0.108544, DSC: 0.825701, mIoU: 0.703143
+[20:10:55.201] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:11:34.603] Train epoch: 130 : loss : 0.063571, loss_ce: 0.099605, loss_dice: 0.039548, DSC: 0.928204, mIoU: 0.866026
+[20:11:41.775] Val epoch: 130 : loss : 0.194499, loss_ce: 0.324456, loss_dice: 0.107861, DSC: 0.824089, mIoU: 0.700810
+[20:11:42.020] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:12:19.057] Train epoch: 131 : loss : 0.061667, loss_ce: 0.096233, loss_dice: 0.038623, DSC: 0.930668, mIoU: 0.870327
+[20:12:26.340] Val epoch: 131 : loss : 0.196792, loss_ce: 0.329883, loss_dice: 0.108065, DSC: 0.824623, mIoU: 0.701582
+[20:12:26.604] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:13:06.760] Train epoch: 132 : loss : 0.062496, loss_ce: 0.097537, loss_dice: 0.039134, DSC: 0.929682, mIoU: 0.868603
+[20:13:13.965] Val epoch: 132 : loss : 0.197502, loss_ce: 0.330891, loss_dice: 0.108575, DSC: 0.823951, mIoU: 0.700610
+[20:13:14.235] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:13:52.130] Train epoch: 133 : loss : 0.061322, loss_ce: 0.096076, loss_dice: 0.038153, DSC: 0.930388, mIoU: 0.869837
+[20:13:59.330] Val epoch: 133 : loss : 0.197753, loss_ce: 0.330438, loss_dice: 0.109297, DSC: 0.821814, mIoU: 0.697524
+[20:13:59.554] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:14:39.462] Train epoch: 134 : loss : 0.062154, loss_ce: 0.097055, loss_dice: 0.038887, DSC: 0.929684, mIoU: 0.868607
+[20:14:46.748] Val epoch: 134 : loss : 0.197077, loss_ce: 0.329250, loss_dice: 0.108962, DSC: 0.822906, mIoU: 0.699099
+[20:14:47.022] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:15:27.224] Train epoch: 135 : loss : 0.062081, loss_ce: 0.096891, loss_dice: 0.038874, DSC: 0.929937, mIoU: 0.869048
+[20:15:34.527] Val epoch: 135 : loss : 0.198662, loss_ce: 0.333904, loss_dice: 0.108501, DSC: 0.825062, mIoU: 0.702217
+[20:15:34.797] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:16:14.325] Train epoch: 136 : loss : 0.061017, loss_ce: 0.095532, loss_dice: 0.038008, DSC: 0.931187, mIoU: 0.871235
+[20:16:21.694] Val epoch: 136 : loss : 0.197288, loss_ce: 0.331501, loss_dice: 0.107813, DSC: 0.825591, mIoU: 0.702984
+[20:16:21.964] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:17:02.625] Train epoch: 137 : loss : 0.060944, loss_ce: 0.095306, loss_dice: 0.038036, DSC: 0.931394, mIoU: 0.871597
+[20:17:09.960] Val epoch: 137 : loss : 0.198138, loss_ce: 0.332824, loss_dice: 0.108347, DSC: 0.825315, mIoU: 0.702584
+[20:17:10.198] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:17:49.640] Train epoch: 138 : loss : 0.060083, loss_ce: 0.094407, loss_dice: 0.037200, DSC: 0.931742, mIoU: 0.872206
+[20:17:56.865] Val epoch: 138 : loss : 0.198745, loss_ce: 0.335094, loss_dice: 0.107846, DSC: 0.825753, mIoU: 0.703219
+[20:17:57.129] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:18:36.000] Train epoch: 139 : loss : 0.060605, loss_ce: 0.094741, loss_dice: 0.037847, DSC: 0.931367, mIoU: 0.871549
+[20:18:43.378] Val epoch: 139 : loss : 0.198068, loss_ce: 0.333577, loss_dice: 0.107729, DSC: 0.825779, mIoU: 0.703256
+[20:18:43.658] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:19:22.518] Train epoch: 140 : loss : 0.060403, loss_ce: 0.094330, loss_dice: 0.037785, DSC: 0.931696, mIoU: 0.872127
+[20:19:29.844] Val epoch: 140 : loss : 0.198244, loss_ce: 0.333169, loss_dice: 0.108294, DSC: 0.824673, mIoU: 0.701654
+[20:19:30.095] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:20:09.841] Train epoch: 141 : loss : 0.060121, loss_ce: 0.094219, loss_dice: 0.037388, DSC: 0.931885, mIoU: 0.872458
+[20:20:17.113] Val epoch: 141 : loss : 0.199851, loss_ce: 0.336911, loss_dice: 0.108477, DSC: 0.824859, mIoU: 0.701923
+[20:20:17.370] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:20:55.601] Train epoch: 142 : loss : 0.059914, loss_ce: 0.093711, loss_dice: 0.037383, DSC: 0.932233, mIoU: 0.873068
+[20:21:03.033] Val epoch: 142 : loss : 0.197650, loss_ce: 0.332667, loss_dice: 0.107639, DSC: 0.825795, mIoU: 0.703280
+[20:21:03.313] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:21:43.721] Train epoch: 143 : loss : 0.059862, loss_ce: 0.093102, loss_dice: 0.037701, DSC: 0.932174, mIoU: 0.872964
+[20:21:51.038] Val epoch: 143 : loss : 0.198216, loss_ce: 0.333662, loss_dice: 0.107919, DSC: 0.825480, mIoU: 0.702823
+[20:21:51.270] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:22:29.622] Train epoch: 144 : loss : 0.059858, loss_ce: 0.093558, loss_dice: 0.037392, DSC: 0.932274, mIoU: 0.873140
+[20:22:36.788] Val epoch: 144 : loss : 0.197255, loss_ce: 0.330980, loss_dice: 0.108105, DSC: 0.824746, mIoU: 0.701760
+[20:22:37.042] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:23:15.020] Train epoch: 145 : loss : 0.058137, loss_ce: 0.090922, loss_dice: 0.036280, DSC: 0.934330, mIoU: 0.876754
+[20:23:22.194] Val epoch: 145 : loss : 0.199467, loss_ce: 0.337146, loss_dice: 0.107682, DSC: 0.826500, mIoU: 0.704304
+[20:23:22.464] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:24:03.930] Train epoch: 146 : loss : 0.059145, loss_ce: 0.092571, loss_dice: 0.036861, DSC: 0.933272, mIoU: 0.874893
+[20:24:11.150] Val epoch: 146 : loss : 0.199817, loss_ce: 0.336888, loss_dice: 0.108437, DSC: 0.824795, mIoU: 0.701831
+[20:24:11.377] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:24:49.095] Train epoch: 147 : loss : 0.059118, loss_ce: 0.092574, loss_dice: 0.036813, DSC: 0.933014, mIoU: 0.874439
+[20:24:56.311] Val epoch: 147 : loss : 0.200445, loss_ce: 0.338319, loss_dice: 0.108529, DSC: 0.824939, mIoU: 0.702040
+[20:24:56.544] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:25:35.000] Train epoch: 148 : loss : 0.058862, loss_ce: 0.091768, loss_dice: 0.036924, DSC: 0.933780, mIoU: 0.875786
+[20:25:42.208] Val epoch: 148 : loss : 0.199804, loss_ce: 0.336946, loss_dice: 0.108377, DSC: 0.825054, mIoU: 0.702205
+[20:25:42.485] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
+[20:26:20.585] Train epoch: 149 : loss : 0.058865, loss_ce: 0.091863, loss_dice: 0.036866, DSC: 0.933682, mIoU: 0.875614
+[20:26:27.920] Val epoch: 149 : loss : 0.199530, loss_ce: 0.336217, loss_dice: 0.108405, DSC: 0.824758, mIoU: 0.701777
+[20:26:28.188] save model to model_out/wl_swinunet_e150_bs8_224/last_model.pth
