@@ -1,0 +1,8 @@
+{
+  "experiment_name": "wl_unet_e150_bs8_512x512_cosine_amp_20260420_134942",
+  "best_val_dice": 0.7154560152689616,
+  "epochs_completed": 150,
+  "total_minutes": 204.05029819409052,
+  "device": "cuda",
+  "amp_enabled": true
+}

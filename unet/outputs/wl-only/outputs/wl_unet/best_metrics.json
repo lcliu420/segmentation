@@ -1,0 +1,7 @@
+{
+  "best_epoch": 94,
+  "best_val_dice": 0.7095153601964315,
+  "best_val_iou": 0.5841124924023946,
+  "best_val_precision": 0.738811624844869,
+  "best_val_recall": 0.7727802069981893
+}

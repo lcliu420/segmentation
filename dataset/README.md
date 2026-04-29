@@ -1,6 +1,6 @@
 # 胃镜病灶分割数据集诊断
 
-本目录包含胃镜病灶分割数据集的两个成像模态：`WL` 与 `NBI`。当前版本保留为未划分的原始配对结构，每个模态包含 2800 张图像及其对应分割 mask，共 5600 对样本。
+本目录包含胃镜病灶分割数据集的两个成像模态：`WL` 与 `NBI`。每个模态包含 2800 张图像及其对应分割 mask，共 5600 对样本。当前已按 `70% / 15% / 15%` 划分为 `train`、`val`、`test`。
 
 本次诊断时间：2026-04-29。诊断目标不是比较模型指标，而是先回答：这个数据集真正困难在哪里，后续论文方法应该围绕什么问题展开。
 
@@ -9,19 +9,37 @@
 ```text
 dataset/
   WL/
-    images/  2800 张 jpg
-    masks/   2800 张 png
+    train/
+      images/  1960 张 jpg
+      masks/   1960 张 png
+    val/
+      images/   420 张 jpg
+      masks/    420 张 png
+    test/
+      images/   420 张 jpg
+      masks/    420 张 png
   NBI/
-    images/  2800 张 jpg
-    masks/   2800 张 png
+    train/
+      images/  1960 张 jpg
+      masks/   1960 张 png
+    val/
+      images/   420 张 jpg
+      masks/    420 张 png
+    test/
+      images/   420 张 jpg
+      masks/    420 张 png
   scripts/
     dataset_diagnosis.py
+    split_dataset.py
   analysis_outputs/
     dataset_metrics.csv
     summary.md
+    split_manifest.csv
     visual_samples.csv
     visual_check/
 ```
+
+说明：划分后的 `train/val/test` 目录已经完整可用，训练和评估时应使用这些目录。
 
 数据完整性复核结果：
 
@@ -158,23 +176,37 @@ predictions/
 - 做 WL/NBI 对比分析：证明 NBI 在颜色差异和清晰度上更有优势，而 WL 更依赖上下文和边界建模。
 - 如果论文需要一个更聚焦的创新点，可以围绕“边界感知 + 模态自适应增强”展开，而不是盲目堆叠更复杂主干网络。
 
-## 建议的数据集划分
+## 数据集划分
 
-当前目录尚未划分。若需要复现实验，建议生成独立划分清单，而不是直接移动原始文件。
+运行：
 
-推荐策略：
+```bash
+python scripts/split_dataset.py
+```
+
+划分策略：
 
 - 比例：train 70%，val 15%，test 15%。
-- 随机种子固定，例如 `20260429`。
+- 随机种子：`20260429`。
 - 分层依据：按 mask 前景占比分为小病灶、中等病灶、大病灶，尽量保持各集合比例接近。
-- 输出清单建议保存为 `analysis_outputs/split_manifest.csv`，字段至少包含 `modality`、`image_path`、`mask_path`、`split`、`foreground_ratio`、`size_bucket`。
+- 划分清单：`analysis_outputs/split_manifest.csv`。
 
-按当前样本数，70/15/15 划分后每个模态应为：
+划分结果：
 
 | 模态 | train | val | test | 总数 |
 | --- | ---: | ---: | ---: | ---: |
 | WL | 1960 | 420 | 420 | 2800 |
 | NBI | 1960 | 420 | 420 | 2800 |
 
-如果能恢复患者 ID，应优先做患者级 train/val/test，避免同一患者图像同时进入训练集和测试集。
+各子集 image/mask 配对复核：
 
+| 模态 | 集合 | images | masks | 缺失 mask | 缺失 image |
+| --- | --- | ---: | ---: | ---: | ---: |
+| WL | train | 1960 | 1960 | 0 | 0 |
+| WL | val | 420 | 420 | 0 | 0 |
+| WL | test | 420 | 420 | 0 | 0 |
+| NBI | train | 1960 | 1960 | 0 | 0 |
+| NBI | val | 420 | 420 | 0 | 0 |
+| NBI | test | 420 | 420 | 0 | 0 |
+
+当前文件名没有患者 ID 或病例号，因此本次无法做患者级划分。如果能恢复患者 ID，应优先改为患者级 train/val/test，避免同一患者图像同时进入训练集和测试集。

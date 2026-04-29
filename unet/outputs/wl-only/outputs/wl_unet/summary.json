@@ -1,0 +1,8 @@
+{
+  "experiment_name": "wl_unet",
+  "best_val_dice": 0.7095153601964315,
+  "epochs_completed": 100,
+  "total_minutes": 78.04511935710907,
+  "device": "cuda",
+  "amp_enabled": true
+}

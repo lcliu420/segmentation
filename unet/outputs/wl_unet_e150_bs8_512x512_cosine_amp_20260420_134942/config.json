@@ -1,0 +1,26 @@
+{
+  "modality": "WL",
+  "data_root": "sorted_075",
+  "output_dir": "outputs",
+  "experiment_name": "wl_unet_e150_bs8_512x512_cosine_amp_20260420_134942",
+  "image_size": [
+    512,
+    512
+  ],
+  "batch_size": 8,
+  "epochs": 150,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "num_workers": 8,
+  "base_channels": 64,
+  "threshold": 0.5,
+  "seed": 42,
+  "device": "cuda",
+  "scheduler": "cosine",
+  "amp_enabled": true,
+  "augmentation_enabled": true,
+  "normalize_enabled": true,
+  "dry_run": false,
+  "loss": "BCE + Dice",
+  "best_model_rule": "验证集 Dice 最大"
+}

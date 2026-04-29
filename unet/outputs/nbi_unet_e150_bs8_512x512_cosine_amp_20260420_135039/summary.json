@@ -1,0 +1,8 @@
+{
+  "experiment_name": "nbi_unet_e150_bs8_512x512_cosine_amp_20260420_135039",
+  "best_val_dice": 0.7938873449961344,
+  "epochs_completed": 150,
+  "total_minutes": 204.37876400550206,
+  "device": "cuda",
+  "amp_enabled": true
+}

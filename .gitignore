@@ -15,3 +15,25 @@ __pycache__/
 
 # outputs
 baseline/outputs/
+
+# model weights / checkpoints
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.safetensors
+
+# archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.xz
+*.tar.gz
