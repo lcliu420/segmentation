@@ -113,11 +113,11 @@ python scripts/dataset_diagnosis.py
 
 WL 疑似失败样本：
 
-![WL likely failure](image/WL_likely_failure_30.jpg)
+![WL likely failure](analysis_outputs/visual_check/WL_likely_failure_30.jpg)
 
 NBI 疑似失败样本：
 
-![NBI likely failure](image/NBI_likely_failure_30.jpg)
+![NBI likely failure](analysis_outputs/visual_check/NBI_likely_failure_30.jpg)
 
 可视化观察：
 
@@ -230,3 +230,76 @@ python scripts/split_dataset.py
 ```text
 Dice / IoU / Boundary IoU / HD95 / MAE
 ```
+
+## 实验终端输出与记录约定
+
+后续无论使用 U-Net v2、Swin-Unet、普通 U-Net，还是替换为其他网络结构，训练和测试脚本都应尽量遵守同一套终端输出与本地记录规范。这样 WL、NBI 以及不同模型之间的结果才能直接横向比较。
+
+训练启动阶段应先输出数据完整性表，至少包含以下字段：
+
+```text
+modal / split / images / masks / missing_masks / missing_images / bad_size / bad_values
+```
+
+随后输出本次实验的基础信息：
+
+- 运行设备：例如 `Using device: cuda` 或 `Using device: cpu`。
+- 模型名称：例如 `UNetV2`、`SwinUnet`、`UNet`。
+- 实验名称：用于区分模态、epoch、batch size、输入尺寸、学习率、优化器、是否增强等设置。
+- 输出目录：本次实验所有 checkpoint、CSV 和预测结果的保存位置。
+- 优化器信息：至少能看出优化器类型、学习率和 weight decay。
+- 训练开始标记：`#################### Start Training ####################`。
+
+每个 epoch 训练阶段应使用 `tqdm` 进度条显示当前 epoch、step 进度、实时学习率和实时 loss，例如：
+
+```text
+Epoch 001/100: 100%|████████████████| 123/123 [03:20<00:00,  1.63s/it, lr=1.00e-04, loss=1.2345]
+```
+
+每个 epoch 结束后必须分别输出 `TRAIN` 和 `VAL` 汇总行。两行格式应保持一致，并包含：
+
+```text
+epoch / dataset / dice / iou / b_iou / hd95 / mae / lr / loss
+```
+
+其中 `b_iou` 是终端显示中的缩写，对应 CSV 和论文表格中的 `Boundary IoU` 或 `boundary_iou`。推荐格式如下：
+
+```text
+TRAIN | epoch=001/100 | dataset=WL       | dice= 0.7123 | iou= 0.5542 | b_iou= 0.3381 | hd95=  21.4827 | mae= 0.0921 | lr= 1.00e-04 | loss=  1.2345
+VAL   | epoch=001/100 | dataset=WL       | dice= 0.7356 | iou= 0.5812 | b_iou= 0.3510 | hd95=  18.9341 | mae= 0.0842 | lr= 1.00e-04 | loss=  0.9876
+BEST  | epoch=001/100 best_dice=0.7356
+```
+
+当当前 epoch 的验证集 Dice 超过历史最好结果时，应输出 `BEST` 行，并保存最优 checkpoint。
+
+本地记录文件建议统一保存为以下结构：
+
+```text
+outputs/
+  <ModelName>/
+    <WL or NBI>/
+      config.json
+      history.csv
+      metrics_val.csv
+      checkpoints/
+        best.pth
+        latest.pth
+      predictions/
+        test/
+          *.png
+      metrics_test.csv
+      metrics_test_per_image.csv
+```
+
+各文件含义如下：
+
+- `config.json`：保存本次实验参数、模型名、设备、预训练权重路径、输入尺寸、batch size、学习率、优化器、指标列表等信息。
+- `history.csv`：按 epoch 保存 `train_loss`、`val_loss`、train/val 的 Dice、IoU、Boundary IoU、HD95、MAE、当前 best Dice，以及该 epoch 是否为最优。
+- `metrics_val.csv`：保存验证集逐 epoch 汇总结果，便于快速画曲线或筛选最优 epoch。
+- `checkpoints/best.pth`：验证集 Dice 最优的模型权重。
+- `checkpoints/latest.pth`：最后一次保存的模型权重，便于中断后恢复或排查。
+- `metrics_test.csv`：最终测试集汇总指标。
+- `metrics_test_per_image.csv`：测试集逐图指标，用于分析失败样本。
+- `predictions/test/*.png`：测试集预测 mask，文件名应与原图 stem 对齐。
+
+默认不要求使用 wandb 或其他在线实验平台；即使使用在线记录，也必须保留上述本地文件，保证实验离线可复现。

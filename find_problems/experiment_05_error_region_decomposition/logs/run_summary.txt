@@ -1,0 +1,22 @@
+Experiment 05 run summary
+
+rows: 3360
+missing_prediction_count: 0
+invalid_ratio_count: 0
+bad_composition_count: 0
+
+empty_region_counts:
+  interior: 0
+  boundary_inner: 0
+  boundary_outer: 0
+  exterior: 0
+
+model_modal_rows:
+  swin_unet/WL: 420
+  swin_unet/NBI: 420
+  unet/WL: 420
+  unet/NBI: 420
+  unetpp/WL: 420
+  unetpp/NBI: 420
+  attention_unet/WL: 420
+  attention_unet/NBI: 420

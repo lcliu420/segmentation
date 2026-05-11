@@ -1,0 +1,121 @@
+model,modal,prediction_metric,regression_model,features,n,n_features,r2,adjusted_r2
+swin_unet,WL,Boundary_IoU,A_scale,scale,420,1,0.06562946048265872,0.0633941242637176
+swin_unet,WL,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.07759414028571332,0.07317013136622041
+swin_unet,WL,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.12239304797569628,0.11393418578751013
+swin_unet,WL,Dice,A_scale,scale,420,1,0.12911180911636444,0.12702834454487244
+swin_unet,WL,Dice,B_scale_global,scale + global_hfr,420,2,0.13295472977321077,0.1287962392685259
+swin_unet,WL,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.14625843147347617,0.13802959707803975
+swin_unet,WL,HD95,A_scale,scale,420,1,0.00919515190079545,0.006824805374242238
+swin_unet,WL,HD95,B_scale_global,scale + global_hfr,420,2,0.018910561174340645,0.014205096239925052
+swin_unet,WL,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.023715070457929754,0.014305095233427823
+swin_unet,WL,IoU,A_scale,scale,420,1,0.1475298053649161,0.14549040298540628
+swin_unet,WL,IoU,B_scale_global,scale + global_hfr,420,2,0.15252364290800557,0.148459008101809
+swin_unet,WL,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.16613182540563642,0.1580945417950883
+swin_unet,WL,MAE,A_scale,scale,420,1,0.15932308588349042,0.15731189709373794
+swin_unet,WL,MAE,B_scale_global,scale + global_hfr,420,2,0.17271715986761227,0.16874937646170152
+swin_unet,WL,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.17693412532157926,0.16900096026443778
+unet,WL,Boundary_IoU,A_scale,scale,420,1,0.07079494924674368,0.06857197065642484
+unet,WL,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.08339087987125138,0.07899467306008234
+unet,WL,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.1187895681215344,0.1102959735974045
+unet,WL,Dice,A_scale,scale,420,1,0.18751269097798096,0.18556894143486602
+unet,WL,Dice,B_scale_global,scale + global_hfr,420,2,0.1926305189528611,0.18875824326438562
+unet,WL,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.21548129601633426,0.20791966995384104
+unet,WL,HD95,A_scale,scale,420,1,0.010932945002435468,0.008566755875646925
+unet,WL,HD95,B_scale_global,scale + global_hfr,420,2,0.018366003757364968,0.013657927036776818
+unet,WL,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.034853545116607765,0.025550928683996665
+unet,WL,IoU,A_scale,scale,420,1,0.20142163778425048,0.19951116323349505
+unet,WL,IoU,B_scale_global,scale + global_hfr,420,2,0.20973380575943312,0.20594356022350713
+unet,WL,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.22773050934065686,0.2202869479849041
+unet,WL,MAE,A_scale,scale,420,1,0.16816939792261953,0.166179372558798
+unet,WL,MAE,B_scale_global,scale + global_hfr,420,2,0.18607902962622747,0.18217533192659308
+unet,WL,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.19554561790090852,0.18779184072404975
+unetpp,WL,Boundary_IoU,A_scale,scale,420,1,0.05097520103973818,0.04870480678385236
+unetpp,WL,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.06588862770639581,0.06140847723975984
+unetpp,WL,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.08967928090177968,0.08090510529601358
+unetpp,WL,Dice,A_scale,scale,420,1,0.16276896266603968,0.16076601760064735
+unetpp,WL,Dice,B_scale_global,scale + global_hfr,420,2,0.1701046291928553,0.16612431566380426
+unetpp,WL,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.18402495934389018,0.17616013967491562
+unetpp,WL,HD95,A_scale,scale,420,1,0.014981228929883406,0.012624724692873457
+unetpp,WL,HD95,B_scale_global,scale + global_hfr,420,2,0.03166568675212045,0.02702139747994836
+unetpp,WL,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.02455757058448027,0.015155715843125805
+unetpp,WL,IoU,A_scale,scale,420,1,0.1750071215445148,0.17303345437117623
+unetpp,WL,IoU,B_scale_global,scale + global_hfr,420,2,0.1867324935929927,0.18283193001310305
+unetpp,WL,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.19794924749207898,0.190218637829352
+unetpp,WL,MAE,A_scale,scale,420,1,0.20684716687884985,0.20494967206277048
+unetpp,WL,MAE,B_scale_global,scale + global_hfr,420,2,0.23266101702077868,0.22898073412879205
+unetpp,WL,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.23537190381287054,0.22800199445203073
+attention_unet,WL,Boundary_IoU,A_scale,scale,420,1,0.04687523877011324,0.04459503599205128
+attention_unet,WL,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.05922798544905772,0.054715889456007694
+attention_unet,WL,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.09848513199817066,0.0897958320656228
+attention_unet,WL,Dice,A_scale,scale,420,1,0.13938526282532815,0.1373263758942882
+attention_unet,WL,Dice,B_scale_global,scale + global_hfr,420,2,0.14990336238130408,0.14582616028241346
+attention_unet,WL,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.1717029758245805,0.16371939004939562
+attention_unet,WL,HD95,A_scale,scale,420,1,0.02462140755118325,0.02228796594245397
+attention_unet,WL,HD95,B_scale_global,scale + global_hfr,420,2,0.026813181828471144,0.022145619151389462
+attention_unet,WL,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.037189772448661396,0.027909673869853213
+attention_unet,WL,IoU,A_scale,scale,420,1,0.15561393434844528,0.15359387199042718
+attention_unet,WL,IoU,B_scale_global,scale + global_hfr,420,2,0.16998238865611315,0.16600148884151422
+attention_unet,WL,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.1896155890075848,0.18180465492573017
+attention_unet,WL,MAE,A_scale,scale,420,1,0.20935304778157382,0.20746154789588378
+attention_unet,WL,MAE,B_scale_global,scale + global_hfr,420,2,0.2316555654765402,0.2279704602749889
+attention_unet,WL,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.2383003971614689,0.23095871424254322
+swin_unet,NBI,Boundary_IoU,A_scale,scale,420,1,0.1839921204042001,0.1820399484434445
+swin_unet,NBI,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.18421174112230432,0.18029908760250724
+swin_unet,NBI,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.22416853885118326,0.2166906452497488
+swin_unet,NBI,Dice,A_scale,scale,420,1,0.20301705682804394,0.20111039906925932
+swin_unet,NBI,Dice,B_scale_global,scale + global_hfr,420,2,0.207499181990338,0.2036982188344164
+swin_unet,NBI,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.21976821309650352,0.21224790671671068
+swin_unet,NBI,HD95,A_scale,scale,420,1,0.004887993517164624,0.002507342783952038
+swin_unet,NBI,HD95,B_scale_global,scale + global_hfr,420,2,0.009784123955621338,0.00503488714006084
+swin_unet,NBI,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.0390964935613477,0.029834773017360594
+swin_unet,NBI,IoU,A_scale,scale,420,1,0.2403159996142511,0.23849857377600758
+swin_unet,NBI,IoU,B_scale_global,scale + global_hfr,420,2,0.24464394403478862,0.24102113321481156
+swin_unet,NBI,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.26008208948390854,0.2529503505873678
+swin_unet,NBI,MAE,A_scale,scale,420,1,0.017023382061972958,0.01467176335877185
+swin_unet,NBI,MAE,B_scale_global,scale + global_hfr,420,2,0.022042123016627446,0.01735167756346978
+swin_unet,NBI,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.06414204665214696,0.05512172902951695
+unet,NBI,Boundary_IoU,A_scale,scale,420,1,0.33293904786439776,0.3313432082659872
+unet,NBI,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.33304889349241207,0.3298500872261887
+unet,NBI,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.3582459641569884,0.352060383088622
+unet,NBI,Dice,A_scale,scale,420,1,0.33083007444366486,0.3292291894542956
+unet,NBI,Dice,B_scale_global,scale + global_hfr,420,2,0.3374776605435026,0.33430009536625327
+unet,NBI,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.339857121465034,0.3334942985393957
+unet,NBI,HD95,A_scale,scale,420,1,0.09141934845921251,0.08924571053686603
+unet,NBI,HD95,B_scale_global,scale + global_hfr,420,2,0.09392560032235253,0.089579919748359
+unet,NBI,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.1108155779972464,0.10224512573697886
+unet,NBI,IoU,A_scale,scale,420,1,0.39032099085395044,0.388862428631113
+unet,NBI,IoU,B_scale_global,scale + global_hfr,420,2,0.39565432681857093,0.3927557864196193
+unet,NBI,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.40191677952891236,0.39615212198220306
+unet,NBI,MAE,A_scale,scale,420,1,0.009018392406925035,0.006647623010769266
+unet,NBI,MAE,B_scale_global,scale + global_hfr,420,2,0.012939606669304937,0.008205504063402369
+unet,NBI,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.05614404669776196,0.04704663991894509
+unetpp,NBI,Boundary_IoU,A_scale,scale,420,1,0.2152282324259589,0.21335078800592522
+unetpp,NBI,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.21580099487399418,0.21203984856643543
+unetpp,NBI,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.2407576104578074,0.23343961152246095
+unetpp,NBI,Dice,A_scale,scale,420,1,0.25801249314130204,0.256237403411975
+unetpp,NBI,Dice,B_scale_global,scale + global_hfr,420,2,0.26023741663692457,0.2566893946543679
+unetpp,NBI,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.2647507025406295,0.25766396232415356
+unetpp,NBI,HD95,A_scale,scale,420,1,0.06110402744273735,0.058857864828963935
+unetpp,NBI,HD95,B_scale_global,scale + global_hfr,420,2,0.06563064433947408,0.06114925654254111
+unetpp,NBI,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.0660017103232432,0.05699931716973217
+unetpp,NBI,IoU,A_scale,scale,420,1,0.3033288081215274,0.30166213062899516
+unetpp,NBI,IoU,B_scale_global,scale + global_hfr,420,2,0.30489037984716316,0.3015565207577011
+unetpp,NBI,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.31285782885862634,0.3062347717873841
+unetpp,NBI,MAE,A_scale,scale,420,1,0.0038177482166815713,0.0014345370880133324
+unetpp,NBI,MAE,B_scale_global,scale + global_hfr,420,2,0.005905586819515363,0.00113774790737875
+unetpp,NBI,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.04247623962794023,0.033247094949655276
+attention_unet,NBI,Boundary_IoU,A_scale,scale,420,1,0.2337963649129009,0.23196334186245327
+attention_unet,NBI,Boundary_IoU,B_scale_global,scale + global_hfr,420,2,0.2355702184294739,0.23190388854184552
+attention_unet,NBI,Boundary_IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.24904019879276196,0.24180203203413797
+attention_unet,NBI,Dice,A_scale,scale,420,1,0.2938540461927144,0.2921647018056156
+attention_unet,NBI,Dice,B_scale_global,scale + global_hfr,420,2,0.3024007365596697,0.2990549367350158
+attention_unet,NBI,Dice,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.30003582566031717,0.2932891830160792
+attention_unet,NBI,HD95,A_scale,scale,420,1,0.0800544730778584,0.0778536464584274
+attention_unet,NBI,HD95,B_scale_global,scale + global_hfr,420,2,0.0947419067462466,0.09040014131097684
+attention_unet,NBI,HD95,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.0854590943763055,0.07664424227390843
+attention_unet,NBI,IoU,A_scale,scale,420,1,0.34715472547988013,0.34559289467959275
+attention_unet,NBI,IoU,B_scale_global,scale + global_hfr,420,2,0.3566442953342317,0.35355865646293305
+attention_unet,NBI,IoU,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.3563843972828392,0.35018087340122794
+attention_unet,NBI,MAE,A_scale,scale,420,1,0.00014796612805223486,-0.0022440243836032714
+attention_unet,NBI,MAE,B_scale_global,scale + global_hfr,420,2,0.005203131467792388,0.0004319234652399029
+attention_unet,NBI,MAE,C_scale_boundary,scale + boundary_hfr + boundary_freq_std + boundary_freq_gap,420,4,0.042452949561612385,0.033223580400760344

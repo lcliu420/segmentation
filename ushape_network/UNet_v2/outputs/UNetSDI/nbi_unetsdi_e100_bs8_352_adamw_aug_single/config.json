@@ -1,0 +1,34 @@
+{
+  "epoch": 100,
+  "lr": 0.0001,
+  "optimizer": "AdamW",
+  "augmentation": true,
+  "multi_scale": false,
+  "batchsize": 8,
+  "trainsize": 352,
+  "clip": 0.5,
+  "decay_rate": 0.1,
+  "decay_epoch": 50,
+  "data_root": "dataset",
+  "modal": "NBI",
+  "model": "unet_sdi",
+  "pretrained_path": "pvt_pth/pvt_v2_b2.pth",
+  "train_save": "outputs",
+  "device": "cuda",
+  "num_workers": 8,
+  "run_name": "unet_sdi_NBI_epoch100_bs8_size352_lr0.0001_AdamW_aug_single",
+  "check_data": false,
+  "model_name": "UNetSDI",
+  "device_resolved": "cuda",
+  "training_metrics": [
+    "Dice",
+    "IoU"
+  ],
+  "test_metrics": [
+    "Dice",
+    "IoU",
+    "Boundary IoU",
+    "HD95",
+    "MAE"
+  ]
+}

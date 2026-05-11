@@ -1,0 +1,18 @@
+Experiment 04 run summary
+
+merged_rows: 3360
+correlation_rows: 200
+group_summary_rows: 120
+regression_rows: 120
+
+model_modal_rows:
+  swin_unet/WL: 420
+  swin_unet/NBI: 420
+  unet/WL: 420
+  unet/NBI: 420
+  unetpp/WL: 420
+  unetpp/NBI: 420
+  attention_unet/WL: 420
+  attention_unet/NBI: 420
+
+warnings: 0

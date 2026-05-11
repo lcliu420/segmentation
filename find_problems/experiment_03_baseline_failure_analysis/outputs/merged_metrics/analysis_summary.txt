@@ -1,0 +1,20 @@
+Experiment 03 analysis summary
+
+merged_rows: 3360
+model_modal_rows:
+  attention_unet/NBI: 420
+  attention_unet/WL: 420
+  swin_unet/NBI: 420
+  swin_unet/WL: 420
+  unet/NBI: 420
+  unet/WL: 420
+  unetpp/NBI: 420
+  unetpp/WL: 420
+
+common_failures:
+  WL: 45 images
+  NBI: 59 images
+
+high_dice_low_boundary_rows:
+  WL: 24 rows / 18 images
+  NBI: 24 rows / 17 images
