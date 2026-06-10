@@ -1,0 +1,1228 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/kequ1c",
+    "id": "kequ1c",
+    "slide": 3,
+    "layoutId": "5a102e24-70ab-4b8e-826a-e72cd177f46f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "79459bad-55c2-4c3b-8f27-fb0554e4f41e",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Consolas",
+      "Microsoft YaHei",
+      "Microsoft YaHei UI"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "5a102e24-70ab-4b8e-826a-e72cd177f46f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "79459bad-55c2-4c3b-8f27-fb0554e4f41e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "79459bad-55c2-4c3b-8f27-fb0554e4f41e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#2B2B2B",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "2",
+      "bbox": [
+        60,
+        34,
+        230,
+        24
+      ],
+      "geometry": "rect",
+      "text": "ARCHITECTURE",
+      "textPreview": "ARCHITECTURE",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Microsoft YaHei",
+        "color": "#666666",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ARCHITECTURE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ARCHITECTURE",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Microsoft YaHei",
+            "color": "#666666",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ARCHITECTURE",
+              "fontSize": 12,
+              "typeface": "Microsoft YaHei",
+              "color": "#666666",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "3",
+      "bbox": [
+        60,
+        62,
+        960,
+        56
+      ],
+      "geometry": "rect",
+      "text": "整体模型架构图：PFESA 作用在 skip feature",
+      "textPreview": "整体模型架构图：PFESA 作用在 skip feature",
+      "resolvedFontSize": 33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 33,
+        "typeface": "Microsoft YaHei UI",
+        "color": "#171717",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "整体模型架构图：PFESA 作用在 skip feature"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "整体模型架构图：PFESA 作用在 skip feature",
+          "resolvedTextStyle": {
+            "fontSize": 33,
+            "typeface": "Microsoft YaHei UI",
+            "color": "#171717",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "整体模型架构图：PFESA 作用在 skip feature",
+              "fontSize": 33,
+              "typeface": "Microsoft YaHei UI",
+              "color": "#171717",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "4",
+      "bbox": [
+        60,
+        646,
+        1060,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#C9CDD3",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "5",
+      "bbox": [
+        1110,
+        664,
+        90,
+        24
+      ],
+      "geometry": "rect",
+      "text": "03/05",
+      "textPreview": "03/05",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Microsoft YaHei",
+        "color": "#666666",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03/05"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03/05",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Microsoft YaHei",
+            "color": "#666666",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "03/05",
+              "fontSize": 12,
+              "typeface": "Microsoft YaHei",
+              "color": "#666666"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/udg7adsj",
+      "id": "6",
+      "bbox": [
+        42,
+        126,
+        802,
+        500
+      ],
+      "alt": "CSWin-UNet with PFESA architecture figure",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "d501e00b-b0e7-4210-83c2-449adb6a54d1",
+        "contentType": "image/png",
+        "byteLength": 1523278
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "7",
+      "bbox": [
+        870,
+        134,
+        330,
+        126
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#2B2B2B",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "8",
+      "bbox": [
+        884,
+        144,
+        302,
+        22
+      ],
+      "geometry": "rect",
+      "text": "CSWin stripe self-attention",
+      "textPreview": "CSWin stripe self-attention",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Microsoft YaHei",
+        "color": "#171717",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CSWin stripe self-attention"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CSWin stripe self-attention",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Microsoft YaHei",
+            "color": "#171717",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CSWin stripe self-attention",
+              "fontSize": 14,
+              "typeface": "Microsoft YaHei",
+              "color": "#171717",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "9",
+      "bbox": [
+        884,
+        172,
+        302,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Q_n^i = W_n^Q X_h^i\nK_n^i = W_n^K X_h^i\nV_n^i = W_n^V X_h^i\nY_n^i = Softmax(Q_n^i(K_n^i)^T / sqrt(d_n)) V_n^i",
+      "textPreview": "Q_n^i = W_n^Q X_h^i | K_n^i = W_n^K X_h^i | V_n^i = W_n^V X_h^i | Y_n^i = Softmax(Q_n^i(K_n^i)^T / sqrt(d_n)) V_n^i",
+      "resolvedFontSize": 12.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12.51,
+        "typeface": "Consolas",
+        "color": "#171717",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Q_n^i = W_n^Q X_h^i"
+          },
+          {
+            "index": 2,
+            "text": "K_n^i = W_n^K X_h^i"
+          },
+          {
+            "index": 3,
+            "text": "V_n^i = W_n^V X_h^i"
+          },
+          {
+            "index": 4,
+            "text": "Y_n^i = Softmax(Q_n^i(K_n^i)^T / sqrt(d_n))"
+          },
+          {
+            "index": 5,
+            "text": "V_n^i"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Q_n^i = W_n^Q X_h^i",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Q_n^i = W_n^Q X_h^i",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "K_n^i = W_n^K X_h^i",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "K_n^i = W_n^K X_h^i",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "V_n^i = W_n^V X_h^i",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "V_n^i = W_n^V X_h^i",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "Y_n^i = Softmax(Q_n^i(K_n^i)^T / sqrt(d_n)) V_n^i",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Y_n^i = Softmax(Q_n^i(K_n^i)^T / sqrt(d_n)) V_n^i",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "10",
+      "bbox": [
+        884,
+        230,
+        302,
+        20
+      ],
+      "geometry": "rect",
+      "text": "对应基底 CSWin Transformer Block",
+      "textPreview": "对应基底 CSWin Transformer Block",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Microsoft YaHei",
+        "color": "#666666",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应基底 CSWin Transformer Block"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应基底 CSWin Transformer Block",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Microsoft YaHei",
+            "color": "#666666",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应基底 CSWin Transformer Block",
+              "fontSize": 11,
+              "typeface": "Microsoft YaHei",
+              "color": "#666666"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "11",
+      "bbox": [
+        870,
+        284,
+        330,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#2B2B2B",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "12",
+      "bbox": [
+        884,
+        294,
+        302,
+        22
+      ],
+      "geometry": "rect",
+      "text": "PFESA frequency decoupling",
+      "textPreview": "PFESA frequency decoupling",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Microsoft YaHei",
+        "color": "#171717",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PFESA frequency decoupling"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PFESA frequency decoupling",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Microsoft YaHei",
+            "color": "#171717",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PFESA frequency decoupling",
+              "fontSize": 14,
+              "typeface": "Microsoft YaHei",
+              "color": "#171717",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7u54zi",
+      "id": "13",
+      "bbox": [
+        884,
+        322,
+        302,
+        46
+      ],
+      "geometry": "rect",
+      "text": "G_σ(u,v) = exp(-(u^2+v^2)/(2σ^2))\nH_l = G_σ ⊙ F(X)\nH_h = (1 - G_σ) ⊙ F(X)",
+      "textPreview": "G_σ(u,v) = exp(-(u^2+v^2)/(2σ^2)) | H_l = G_σ ⊙ F(X) | H_h = (1 - G_σ) ⊙ F(X)",
+      "resolvedFontSize": 12.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12.51,
+        "typeface": "Consolas",
+        "color": "#171717",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "G_σ(u,v) = exp(-(u^2+v^2)/(2σ^2))"
+          },
+          {
+            "index": 2,
+            "text": "H_l = G_σ ⊙ F(X)"
+          },
+          {
+            "index": 3,
+            "text": "H_h = (1 - G_σ) ⊙ F(X)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "G_σ(u,v) = exp(-(u^2+v^2)/(2σ^2))",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "G_σ(u,v) = exp(-(u^2+v^2)/(2σ^2))",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "H_l = G_σ ⊙ F(X)",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "H_l = G_σ ⊙ F(X)",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "H_h = (1 - G_σ) ⊙ F(X)",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "H_h = (1 - G_σ) ⊙ F(X)",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "14",
+      "bbox": [
+        884,
+        372,
+        302,
+        20
+      ],
+      "geometry": "rect",
+      "text": "对应 FFT 高频/低频解耦",
+      "textPreview": "对应 FFT 高频/低频解耦",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Microsoft YaHei",
+        "color": "#666666",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应 FFT 高频/低频解耦"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应 FFT 高频/低频解耦",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Microsoft YaHei",
+            "color": "#666666",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应 FFT 高频/低频解耦",
+              "fontSize": 11,
+              "typeface": "Microsoft YaHei",
+              "color": "#666666"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "15",
+      "bbox": [
+        870,
+        426,
+        330,
+        132
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#2B2B2B",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "16",
+      "bbox": [
+        884,
+        436,
+        302,
+        22
+      ],
+      "geometry": "rect",
+      "text": "PFESA attention",
+      "textPreview": "PFESA attention",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Microsoft YaHei",
+        "color": "#171717",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PFESA attention"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PFESA attention",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Microsoft YaHei",
+            "color": "#171717",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PFESA attention",
+              "fontSize": 14,
+              "typeface": "Microsoft YaHei",
+              "color": "#171717",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "17",
+      "bbox": [
+        884,
+        464,
+        302,
+        60
+      ],
+      "geometry": "rect",
+      "text": "EA = (X_h - μ_h)^2 / σ_h^2\nSA = Sigmoid((X_l^2 - μ_l) / σ_l^2)\nA = Sigmoid(EA + SA)\nX_out = A ⊙ X",
+      "textPreview": "EA = (X_h - μ_h)^2 / σ_h^2 | SA = Sigmoid((X_l^2 - μ_l) / σ_l^2) | A = Sigmoid(EA + SA) | X_out = A ⊙ X",
+      "resolvedFontSize": 12.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12.51,
+        "typeface": "Consolas",
+        "color": "#171717",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EA = (X_h - μ_h)^2 / σ_h^2"
+          },
+          {
+            "index": 2,
+            "text": "SA = Sigmoid((X_l^2 - μ_l) / σ_l^2)"
+          },
+          {
+            "index": 3,
+            "text": "A = Sigmoid(EA + SA)"
+          },
+          {
+            "index": 4,
+            "text": "X_out = A ⊙ X"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EA = (X_h - μ_h)^2 / σ_h^2",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EA = (X_h - μ_h)^2 / σ_h^2",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "SA = Sigmoid((X_l^2 - μ_l) / σ_l^2)",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SA = Sigmoid((X_l^2 - μ_l) / σ_l^2)",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "A = Sigmoid(EA + SA)",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A = Sigmoid(EA + SA)",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "X_out = A ⊙ X",
+          "resolvedTextStyle": {
+            "fontSize": 12.51,
+            "typeface": "Consolas",
+            "color": "#171717",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "X_out = A ⊙ X",
+              "fontSize": 12.51,
+              "typeface": "Consolas",
+              "color": "#171717"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "18",
+      "bbox": [
+        884,
+        528,
+        302,
+        20
+      ],
+      "geometry": "rect",
+      "text": "对应 skip feature 的频率增强",
+      "textPreview": "对应 skip feature 的频率增强",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Microsoft YaHei",
+        "color": "#666666",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应 skip feature 的频率增强"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应 skip feature 的频率增强",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Microsoft YaHei",
+            "color": "#666666",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应 skip feature 的频率增强",
+              "fontSize": 11,
+              "typeface": "Microsoft YaHei",
+              "color": "#666666"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "19",
+      "bbox": [
+        70,
+        632,
+        780,
+        22
+      ],
+      "geometry": "rect",
+      "text": "注意：PFESA 是后加在 skip feature 上的模块，不是 CSWin-UNet 原论文自带结构。",
+      "textPreview": "注意：PFESA 是后加在 skip feature 上的模块，不是 CSWin-UNet 原论文自带结构。",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "Microsoft YaHei",
+        "color": "#666666",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "注意：PFESA 是后加在 skip feature 上的模块，不是 CSWin-UNet 原论文自带结构。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "注意：PFESA 是后加在 skip feature 上的模块，不是 CSWin-UNet 原论文自带结构。",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "typeface": "Microsoft YaHei",
+            "color": "#666666",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "注意：PFESA 是后加在 skip feature 上的模块，不是 CSWin-UNet 原论文自带结构。",
+              "fontSize": 15,
+              "typeface": "Microsoft YaHei",
+              "color": "#666666"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
